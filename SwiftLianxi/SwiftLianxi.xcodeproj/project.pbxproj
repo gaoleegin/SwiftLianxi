@@ -12,6 +12,17 @@
 		44BA78EF1BD479ED00078B38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44BA78ED1BD479ED00078B38 /* LaunchScreen.storyboard */; };
 		44BA78FA1BD479ED00078B38 /* SwiftLianxiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BA78F91BD479ED00078B38 /* SwiftLianxiTests.swift */; };
 		44BA79051BD479ED00078B38 /* SwiftLianxiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BA79041BD479ED00078B38 /* SwiftLianxiUITests.swift */; };
+		44BA791E1BD4815100078B38 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BA791D1BD4815100078B38 /* MainViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		44BA79201BD4817800078B38 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BA791F1BD4817800078B38 /* HomeTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		44BA79221BD4818600078B38 /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BA79211BD4818600078B38 /* DiscoverTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		44BA79241BD4819700078B38 /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BA79231BD4819700078B38 /* MessageTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		44BA79261BD481AA00078B38 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BA79251BD481AA00078B38 /* ProfileTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		44BA79281BD481D700078B38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44BA79271BD481D700078B38 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
+		44BA792A1BD481E400078B38 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44BA79291BD481E400078B38 /* Home.storyboard */; settings = {ASSET_TAGS = (); }; };
+		44BA792C1BD481EE00078B38 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44BA792B1BD481EE00078B38 /* Discover.storyboard */; settings = {ASSET_TAGS = (); }; };
+		44BA792E1BD481F800078B38 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44BA792D1BD481F800078B38 /* Message.storyboard */; settings = {ASSET_TAGS = (); }; };
+		44BA79301BD4820100078B38 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44BA792F1BD4820100078B38 /* Profile.storyboard */; settings = {ASSET_TAGS = (); }; };
+		44BA79321BD49E4E00078B38 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BA79311BD49E4E00078B38 /* MainTabBar.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +54,17 @@
 		44BA79001BD479ED00078B38 /* SwiftLianxiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftLianxiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44BA79041BD479ED00078B38 /* SwiftLianxiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLianxiUITests.swift; sourceTree = "<group>"; };
 		44BA79061BD479ED00078B38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44BA791D1BD4815100078B38 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		44BA791F1BD4817800078B38 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		44BA79211BD4818600078B38 /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
+		44BA79231BD4819700078B38 /* MessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
+		44BA79251BD481AA00078B38 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		44BA79271BD481D700078B38 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		44BA79291BD481E400078B38 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		44BA792B1BD481EE00078B38 /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
+		44BA792D1BD481F800078B38 /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
+		44BA792F1BD4820100078B38 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		44BA79311BD49E4E00078B38 /* MainTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +115,7 @@
 		44BA78E31BD479ED00078B38 /* SwiftLianxi */ = {
 			isa = PBXGroup;
 			children = (
+				44BA79141BD4801000078B38 /* Classes */,
 				44BA78E41BD479ED00078B38 /* AppDelegate.swift */,
 				44BA78EB1BD479ED00078B38 /* Assets.xcassets */,
 				44BA78ED1BD479ED00078B38 /* LaunchScreen.storyboard */,
@@ -117,6 +140,88 @@
 				44BA79061BD479ED00078B38 /* Info.plist */,
 			);
 			path = SwiftLianxiUITests;
+			sourceTree = "<group>";
+		};
+		44BA79141BD4801000078B38 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				44BA79151BD4801000078B38 /* Model */,
+				44BA79161BD4801000078B38 /* Mudule */,
+				44BA79171BD4801000078B38 /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		44BA79151BD4801000078B38 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		44BA79161BD4801000078B38 /* Mudule */ = {
+			isa = PBXGroup;
+			children = (
+				44BA791A1BD4809100078B38 /* Main */,
+				44BA79191BD4809100078B38 /* Home */,
+				44BA79181BD4809100078B38 /* Discover */,
+				44BA791B1BD4809100078B38 /* Message */,
+				44BA791C1BD4809100078B38 /* Profile */,
+			);
+			path = Mudule;
+			sourceTree = "<group>";
+		};
+		44BA79171BD4801000078B38 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		44BA79181BD4809100078B38 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				44BA79211BD4818600078B38 /* DiscoverTableViewController.swift */,
+				44BA792B1BD481EE00078B38 /* Discover.storyboard */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		44BA79191BD4809100078B38 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				44BA791F1BD4817800078B38 /* HomeTableViewController.swift */,
+				44BA79291BD481E400078B38 /* Home.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		44BA791A1BD4809100078B38 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				44BA791D1BD4815100078B38 /* MainViewController.swift */,
+				44BA79271BD481D700078B38 /* Main.storyboard */,
+				44BA79311BD49E4E00078B38 /* MainTabBar.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		44BA791B1BD4809100078B38 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				44BA79231BD4819700078B38 /* MessageTableViewController.swift */,
+				44BA792D1BD481F800078B38 /* Message.storyboard */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		44BA791C1BD4809100078B38 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				44BA79251BD481AA00078B38 /* ProfileTableViewController.swift */,
+				44BA792F1BD4820100078B38 /* Profile.storyboard */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,8 +327,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44BA79281BD481D700078B38 /* Main.storyboard in Resources */,
 				44BA78EF1BD479ED00078B38 /* LaunchScreen.storyboard in Resources */,
+				44BA792C1BD481EE00078B38 /* Discover.storyboard in Resources */,
 				44BA78EC1BD479ED00078B38 /* Assets.xcassets in Resources */,
+				44BA792E1BD481F800078B38 /* Message.storyboard in Resources */,
+				44BA79301BD4820100078B38 /* Profile.storyboard in Resources */,
+				44BA792A1BD481E400078B38 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,7 +358,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44BA79261BD481AA00078B38 /* ProfileTableViewController.swift in Sources */,
+				44BA79201BD4817800078B38 /* HomeTableViewController.swift in Sources */,
+				44BA79321BD49E4E00078B38 /* MainTabBar.swift in Sources */,
 				44BA78E51BD479ED00078B38 /* AppDelegate.swift in Sources */,
+				44BA79241BD4819700078B38 /* MessageTableViewController.swift in Sources */,
+				44BA79221BD4818600078B38 /* DiscoverTableViewController.swift in Sources */,
+				44BA791E1BD4815100078B38 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
