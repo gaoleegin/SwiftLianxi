@@ -13,6 +13,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
+                    <connections>
+                        <outlet property="mainTabar" destination="n9g-0g-Doj" id="L19-jx-aPf"/>
+                    </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o9x-RI-P9z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

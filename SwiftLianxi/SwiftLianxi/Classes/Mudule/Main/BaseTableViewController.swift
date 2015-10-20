@@ -1,5 +1,5 @@
 //
-//  HomeTableViewController.swift
+//  BaseTableViewController.swift
 //  SwiftLianxi
 //
 //  Created by 高李军 on 15/10/19.
@@ -8,8 +8,14 @@
 
 import UIKit
 
-class HomeTableViewController: BaseTableViewController {
-
+class BaseTableViewController: UITableViewController {
+    
+    //这样的话一个UITableViewController变成了一个UIViewController
+    override func loadView() {
+    let view = NSBundle.mainBundle().loadNibNamed("VisitorView", owner: nil, options: nil).last as! UIView
+        self.view = view
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -10,9 +10,9 @@ import UIKit
 
 class MainViewController: UITabBarController {
 
+    @IBOutlet weak var mainTabar: MainTabBar!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         UITabBar.appearance().tintColor = UIColor.orangeColor()
         UINavigationBar.appearance().tintColor = UIColor.orangeColor()
@@ -22,6 +22,15 @@ class MainViewController: UITabBarController {
         addChildViewController("消息", image: "tabbar_message_center", storyName: "Message")
         addChildViewController("我的", image: "tabbar_profile", storyName: "Profile")
         // Do any additional setup after loading the view.
+        
+        //可以直接打印，可以给撰写按钮添加监听事件
+        print(self.mainTabar.plusBtn)
+        
+        mainTabar.plusBtn.addTarget(self, action: "plusBtnClicked", forControlEvents: UIControlEvents.TouchUpInside)
+    }
+    //
+     func plusBtnClicked(){
+        print("添加按钮的点击")
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,7 +39,7 @@ class MainViewController: UITabBarController {
        
     }
     
-    func addChildViewController(title:String,image:String,storyName:String) {
+    private func addChildViewController(title:String,image:String,storyName:String) {
         let sb = UIStoryboard(name: storyName, bundle: nil)
         let nav = sb.instantiateInitialViewController() as!UINavigationController
         nav.title = title

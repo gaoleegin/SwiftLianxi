@@ -26,7 +26,10 @@ class MainTabBar: UITabBar {
                 index += (index == 1) ? 2: 1
             }
         }
-        plusBtn.frame = CGRectOffset(frame, CGFloat(2) * w, 0)
+        plusBtn.frame = frame
+        
+        //center是相对于父视图
+        plusBtn.center = CGPointMake(bounds.size.width * 0.5, bounds.size.height * 0.5)
         
 }
     

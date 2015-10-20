@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		447832EF1BD52AC6004F15A0 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447832EE1BD52AC6004F15A0 /* BaseTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		447832F11BD52BBF004F15A0 /* VisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 447832F01BD52BBF004F15A0 /* VisitorView.xib */; settings = {ASSET_TAGS = (); }; };
 		44BA78E51BD479ED00078B38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BA78E41BD479ED00078B38 /* AppDelegate.swift */; };
 		44BA78EC1BD479ED00078B38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44BA78EB1BD479ED00078B38 /* Assets.xcassets */; };
 		44BA78EF1BD479ED00078B38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44BA78ED1BD479ED00078B38 /* LaunchScreen.storyboard */; };
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		447832EE1BD52AC6004F15A0 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		447832F01BD52BBF004F15A0 /* VisitorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisitorView.xib; sourceTree = "<group>"; };
 		44BA78E11BD479ED00078B38 /* SwiftLianxi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftLianxi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44BA78E41BD479ED00078B38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44BA78EB1BD479ED00078B38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -202,6 +206,8 @@
 				44BA791D1BD4815100078B38 /* MainViewController.swift */,
 				44BA79271BD481D700078B38 /* Main.storyboard */,
 				44BA79311BD49E4E00078B38 /* MainTabBar.swift */,
+				447832EE1BD52AC6004F15A0 /* BaseTableViewController.swift */,
+				447832F01BD52BBF004F15A0 /* VisitorView.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -330,6 +336,7 @@
 				44BA79281BD481D700078B38 /* Main.storyboard in Resources */,
 				44BA78EF1BD479ED00078B38 /* LaunchScreen.storyboard in Resources */,
 				44BA792C1BD481EE00078B38 /* Discover.storyboard in Resources */,
+				447832F11BD52BBF004F15A0 /* VisitorView.xib in Resources */,
 				44BA78EC1BD479ED00078B38 /* Assets.xcassets in Resources */,
 				44BA792E1BD481F800078B38 /* Message.storyboard in Resources */,
 				44BA79301BD4820100078B38 /* Profile.storyboard in Resources */,
@@ -360,6 +367,7 @@
 			files = (
 				44BA79261BD481AA00078B38 /* ProfileTableViewController.swift in Sources */,
 				44BA79201BD4817800078B38 /* HomeTableViewController.swift in Sources */,
+				447832EF1BD52AC6004F15A0 /* BaseTableViewController.swift in Sources */,
 				44BA79321BD49E4E00078B38 /* MainTabBar.swift in Sources */,
 				44BA78E51BD479ED00078B38 /* AppDelegate.swift in Sources */,
 				44BA79241BD4819700078B38 /* MessageTableViewController.swift in Sources */,
@@ -581,6 +589,7 @@
 				44BA790B1BD479ED00078B38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44BA790C1BD479ED00078B38 /* Build configuration list for PBXNativeTarget "SwiftLianxiTests" */ = {
 			isa = XCConfigurationList;
@@ -589,6 +598,7 @@
 				44BA790E1BD479ED00078B38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44BA790F1BD479ED00078B38 /* Build configuration list for PBXNativeTarget "SwiftLianxiUITests" */ = {
 			isa = XCConfigurationList;
@@ -597,6 +607,7 @@
 				44BA79111BD479ED00078B38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
