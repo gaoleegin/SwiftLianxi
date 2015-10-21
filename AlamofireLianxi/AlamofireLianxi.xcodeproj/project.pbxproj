@@ -15,6 +15,7 @@
 		440464C21BD62A64006403C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 440464C01BD62A64006403C2 /* LaunchScreen.storyboard */; };
 		440464CD1BD62A64006403C2 /* AlamofireLianxiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440464CC1BD62A64006403C2 /* AlamofireLianxiTests.swift */; };
 		440464D81BD62A64006403C2 /* AlamofireLianxiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440464D71BD62A64006403C2 /* AlamofireLianxiUITests.swift */; };
+		444226C31BD6392A003EEF95 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444226C21BD6392A003EEF95 /* Person.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		440464D31BD62A64006403C2 /* AlamofireLianxiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlamofireLianxiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		440464D71BD62A64006403C2 /* AlamofireLianxiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireLianxiUITests.swift; sourceTree = "<group>"; };
 		440464D91BD62A64006403C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		444226C21BD6392A003EEF95 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		B85ECFDC77BAD32AF304AE04 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D4BF082E62477770F7F8E710 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E9C81416DDE95ED0238A4F28 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +121,7 @@
 				440464BE1BD62A64006403C2 /* Assets.xcassets */,
 				440464C01BD62A64006403C2 /* LaunchScreen.storyboard */,
 				440464C31BD62A64006403C2 /* Info.plist */,
+				444226C21BD6392A003EEF95 /* Person.swift */,
 			);
 			path = AlamofireLianxi;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				444226C31BD6392A003EEF95 /* Person.swift in Sources */,
 				440464BA1BD62A64006403C2 /* ViewController.swift in Sources */,
 				440464B81BD62A64006403C2 /* AppDelegate.swift in Sources */,
 			);
