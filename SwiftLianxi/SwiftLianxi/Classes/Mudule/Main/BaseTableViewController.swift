@@ -21,11 +21,10 @@ class BaseTableViewController: UITableViewController,VisitorViewDelegate{
     }
     
     func VisitorViewRegiestViewDidSelected() {
-        print("注册安妮已经点击")
     }
     
     func VisitorViewLoginViewDidSelected() {
-        print("登录按钮已经点击")
+        
     }
     
     override func viewDidLoad() {
@@ -37,7 +36,8 @@ class BaseTableViewController: UITableViewController,VisitorViewDelegate{
     }
     ///右边的注册
     func rightbarButtonClicked(){
-        
+        let oaVC = UIStoryboard(name: "OAuth", bundle: nil).instantiateInitialViewController() as! UINavigationController
+        presentViewController(oaVC, animated: true, completion: nil)
     }
     
     /// 左边的登录
