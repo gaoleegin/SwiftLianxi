@@ -8,22 +8,41 @@
 
 import UIKit
 
-class BaseTableViewController: UITableViewController {
+class BaseTableViewController: UITableViewController,VisitorViewDelegate{
     
     //这样的话一个UITableViewController变成了一个UIViewController
+    
+    var visitorView:VisitorView?
+    
     override func loadView() {
-    let view = NSBundle.mainBundle().loadNibNamed("VisitorView", owner: nil, options: nil).last as! UIView
-        self.view = view
+    visitorView = NSBundle.mainBundle().loadNibNamed("VisitorView", owner: nil, options: nil).last as? VisitorView
+        visitorView!.delegate = self
+        self.view = visitorView
+    }
+    
+    func VisitorViewRegiestViewDidSelected() {
+        print("注册安妮已经点击")
+    }
+    
+    func VisitorViewLoginViewDidSelected() {
+        print("登录按钮已经点击")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "登录", style: UIBarButtonItemStyle.Plain, target: self, action: "leftbarButtonClicked")
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "注册", style: UIBarButtonItemStyle.Plain, target: self, action: "rightbarButtonClicked")
+    }
+    ///右边的注册
+    func rightbarButtonClicked(){
+        
+    }
+    
+    /// 左边的登录
+    func leftbarButtonClicked(){
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,6 +61,8 @@ class BaseTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return 0
     }
+    
+    
 
     /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

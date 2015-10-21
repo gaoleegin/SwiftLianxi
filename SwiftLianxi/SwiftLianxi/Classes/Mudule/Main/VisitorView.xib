@@ -6,7 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VisitorView" customModule="SwiftLianxi" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -31,12 +31,15 @@
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="visitordiscover_feed_mask_smallicon" translatesAutoresizingMaskIntoConstraints="NO" id="0q5-Lr-znc">
                     <rect key="frame" x="0.0" y="90" width="600" height="387"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Djk-wi-0hu">
-                    <rect key="frame" x="196" y="408" width="60" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Djk-wi-0hu">
+                    <rect key="frame" x="196" y="408" width="60" height="35"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="60" id="RFD-Nj-0dd"/>
                     </constraints>
                     <state key="normal" title="登录" backgroundImage="common_button_white_disable"/>
+                    <connections>
+                        <action selector="loginBtnClcke:" destination="iN0-l3-epB" eventType="touchUpInside" id="nP2-QW-LkM"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0t7-Sm-NgU">
                     <rect key="frame" x="350" y="408" width="54" height="30"/>
@@ -45,6 +48,9 @@
                         <constraint firstAttribute="width" constant="54" id="dJQ-4y-A63"/>
                     </constraints>
                     <state key="normal" title="注册" backgroundImage="common_button_white_disable"/>
+                    <connections>
+                        <action selector="registView:" destination="iN0-l3-epB" eventType="touchUpInside" id="7SA-yG-SGH"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelLabelLabelLabelLabelLabelLabelLabelLabelLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="208" translatesAutoresizingMaskIntoConstraints="NO" id="XE3-5o-lut">
                     <rect key="frame" x="196" y="359" width="208" height="41"/>
@@ -82,6 +88,11 @@
                 <constraint firstItem="Xju-aR-w4r" firstAttribute="top" secondItem="0q5-Lr-znc" secondAttribute="bottom" constant="123" id="w97-Eu-6mx"/>
                 <constraint firstItem="XE3-5o-lut" firstAttribute="centerX" secondItem="0q5-Lr-znc" secondAttribute="centerX" id="zgI-DS-Z7t"/>
             </constraints>
+            <connections>
+                <outlet property="middleImageView" destination="Pgg-3L-Mhr" id="B24-tX-gyh"/>
+                <outlet property="titleLabel" destination="XE3-5o-lut" id="4oN-db-AnV"/>
+                <outlet property="zhuanlunImage" destination="Ktp-VB-I9K" id="4hJ-Kv-XBM"/>
+            </connections>
         </view>
     </objects>
     <resources>
