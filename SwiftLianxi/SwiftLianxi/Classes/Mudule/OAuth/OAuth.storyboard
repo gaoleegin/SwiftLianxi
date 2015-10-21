@@ -12,12 +12,27 @@
                         <viewControllerLayoutGuide type="top" id="1Pi-Kp-HSK"/>
                         <viewControllerLayoutGuide type="bottom" id="CHo-zv-W8I"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="nYo-ny-ixS" customClass="UIWebView">
+                    <view key="view" contentMode="scaleToFill" id="nYo-ny-ixS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0g5-ga-y96">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="0g5-ga-y96" secondAttribute="trailing" id="2pi-dz-QdL"/>
+                            <constraint firstItem="0g5-ga-y96" firstAttribute="leading" secondItem="nYo-ny-ixS" secondAttribute="leading" id="O7W-8g-WAQ"/>
+                            <constraint firstItem="CHo-zv-W8I" firstAttribute="top" secondItem="0g5-ga-y96" secondAttribute="bottom" id="vdv-7z-IJ4"/>
+                            <constraint firstItem="0g5-ga-y96" firstAttribute="top" secondItem="nYo-ny-ixS" secondAttribute="top" id="w81-vn-owC"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Lya-2h-3Cw"/>
+                    <connections>
+                        <outlet property="webView" destination="0g5-ga-y96" id="JCT-x8-LwJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zim-jM-Va1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
