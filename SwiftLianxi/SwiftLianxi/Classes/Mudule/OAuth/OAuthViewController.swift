@@ -77,7 +77,7 @@ extension OAuthViewController : UIWebViewDelegate{
             return false
         }
         
-        //如果执行到这里，一定是
+        //如果执行到这里，一定是自己的
         
         let codeStr = "code="
         let query = request.URL!.query!
