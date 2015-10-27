@@ -13,22 +13,24 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        //bubbleSort([1,2,4,3,2,])
+        print(bubbleSort([2,3,6,4,2,8]))
         
-        var numbersArray:[Int] = [1,2,43,3,4,5]
-        
-        for var i = 0;i<numbersArray.count;i++ {
-            for var j=0;j<numbersArray.count-i-1;++j{
-                if (numbersArray[j] < numbersArray[j+1] ) {
-                    let temp:Int = numbersArray[j]
-                    numbersArray[j]  =  numbersArray[j+1]
-                    numbersArray[j+1]  = temp
+}
+    /// 冒泡排序
+    private func bubbleSort(var fromArray:[Int])->(NSArray){
+    
+        for var i = 0;i<fromArray.count;i++ {
+            for var j = 0;j<fromArray.count-i-1;j++ {
+                if fromArray[j]<fromArray[j+1]{
+                    let temp = fromArray[j]
+                    fromArray[j] = fromArray[j+1]
+                    fromArray[j+1] = temp
                 }
             }
         }
         
-        
-        print("==========\(numbersArray)")
-        
+        return fromArray
     }
     
     
