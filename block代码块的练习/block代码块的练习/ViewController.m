@@ -25,14 +25,24 @@
     nextBtn.frame = CGRectMake(100, 100, 100, 100);
     [nextBtn addTarget:self action:@selector(btnClicked) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:nextBtn];
+    
+        
+    
+    
 }
 
 -(void)btnClicked{
     NextViewController *next = [[NextViewController alloc]init];
     next.view.backgroundColor = [UIColor redColor];
-    next.nextViewBlock = ^(NSString *ftText){
-        self.nameLabel.text = ftText;
+    
+    next.nextViewBlock = ^NSArray *(NSString *ft){
+        return nil;
     };
+    
+    next.ndextViewBlock = ^ void(NSString *fttext){
+        
+    };
+    
     [self presentViewController:next animated:true completion:nil];
 }
 

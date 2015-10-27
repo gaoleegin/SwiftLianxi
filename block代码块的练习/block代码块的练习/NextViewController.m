@@ -10,6 +10,9 @@
 
 @interface NextViewController ()
 
+
+@property(nonatomic,copy) void (^myBlcok)(NSString *tfText);
+
 @end
 
 @implementation NextViewController
@@ -20,7 +23,7 @@
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    self.nextViewBlock(@"哈哈哈");
+    
     [self dismissViewControllerAnimated:true completion:nil];
 }
 

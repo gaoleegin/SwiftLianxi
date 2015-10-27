@@ -10,9 +10,9 @@
 
 @interface NextViewController : UIViewController
 
-@property(nonatomic,copy) void (^nextViewBlock)(NSString *tfText);
+@property(nonatomic,copy) void (^nextViewBlock)(NSString *tftext);
 
-@property(nonatomic,copy) void (^ndextViewBlock)(NSString *fttextt);
+@property(nonatomic,copy)  void (^ndextViewBlock)(NSString *fttextt);
 
 
 
