@@ -30,6 +30,19 @@ class ViewController: UIViewController {
             //执行回调
         }
         
+        
+        //创建一个group
+        let  group1 = dispatch_group_create()
+        
+        
+        dispatch_group_enter(group1)
+        
+        dispatch_group_leave(group1)
+        
+        dispatch_group_notify(group1, dispatch_get_main_queue()) { () -> Void in
+            //执行回调
+        }
+
         /*
         // 3. 监听群组调度
         dispatch_group_notify(group, dispatch_get_main_queue(), { () -> Void in
@@ -87,4 +100,108 @@ println("图片缓存完成+加载数据 \(NSHomeDirectory())")
 completion(statuses: statuses)
 })
 */
+
+
+//OC版的dispatch_group_enter的异步执行
+/*
+#import "ViewController.h"
+
+@interface ViewController ()
+
+@end
+
+@implementation ViewController
+
+- (void)viewDidLoad {
+[super viewDidLoad];
+// Do any additional setup after loading the view, typically from a nib.
+}
+
+/**
+$ man dispatch_group_enter
+
+void
+dispatch_group_async(dispatch_group_t group, dispatch_queue_t queue, dispat
+ch_block_t block)
+{
+dispatch_retain(group);
+dispatch_group_enter(group);
+dispatch_async(queue, ^{
+block();
+dispatch_group_leave(group);
+dispatch_release(group);
+});
+}
+*/
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+
+
+// 1. 创建一个群组
+
+
+dispatch_group_t group1 = dispatch_group_create();
+
+
+
+dispatch_group_t group = dispatch_group_create();
+
+dispatch_queue_t q = dispatch_get_global_queue(0, 0);
+
+// 2. 异步任务 － 需要注意 enter & leave 成对出现！
+// 群组准备监听后续异步方法的执行，打了一个标记
+dispatch_group_enter(group);
+dispatch_async(q, ^{
+[NSThread sleepForTimeInterval:0.5];
+NSLog(@"1.--%@", [NSThread currentThread]);
+
+// block 的最后一句，宣告任务完成，取消在群组中的标记
+dispatch_group_leave(group);
+});
+
+dispatch_group_enter(group);
+dispatch_async(q, ^{
+[NSThread sleepForTimeInterval:0.5];
+NSLog(@"2.--%@", [NSThread currentThread]);
+
+// block 的最后一句，宣告任务完成，取消在群组中的标记
+dispatch_group_leave(group);
+});
+
+// 3. 监听任务执行，当 group 中所有标记都没有的时候，得到通知
+dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+NSLog(@"完成回调 %@", [NSThread currentThread]);
+});
+}
+
+- (void)groupDemo {
+// 1. 创建一个群组
+dispatch_group_t group = dispatch_group_create();
+
+dispatch_queue_t q = dispatch_get_global_queue(0, 0);
+
+// 2. 异步任务
+dispatch_group_async(group, q, ^{
+[NSThread sleepForTimeInterval:0.5];
+NSLog(@"1.--%@", [NSThread currentThread]);
+});
+dispatch_group_async(group, q, ^{
+[NSThread sleepForTimeInterval:0.8];
+NSLog(@"2.--%@", [NSThread currentThread]);
+});
+
+// 3. 监听任务执行
+dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+NSLog(@"完成回调 %@", [NSThread currentThread]);
+});
+}
+
+@end
+
+*/
+
+
+
+
+
+
 
