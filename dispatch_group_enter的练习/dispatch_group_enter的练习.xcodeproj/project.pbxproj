@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44F6BBA11BE4AE5900E3D116 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F6BBA01BE4AE5900E3D116 /* AppDelegate.swift */; };
+		44F6BBA31BE4AE5900E3D116 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F6BBA21BE4AE5900E3D116 /* ViewController.swift */; };
+		44F6BBA61BE4AE5900E3D116 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44F6BBA41BE4AE5900E3D116 /* Main.storyboard */; };
+		44F6BBA81BE4AE5900E3D116 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44F6BBA71BE4AE5900E3D116 /* Assets.xcassets */; };
+		44F6BBAB1BE4AE5900E3D116 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44F6BBA91BE4AE5900E3D116 /* LaunchScreen.storyboard */; };
+		44F6BBB61BE4AE5A00E3D116 /* dispatch_group_enter___Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F6BBB51BE4AE5A00E3D116 /* dispatch_group_enter___Tests.swift */; };
+		44F6BBC11BE4AE5A00E3D116 /* dispatch_group_enter___UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F6BBC01BE4AE5A00E3D116 /* dispatch_group_enter___UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44F6BBB21BE4AE5A00E3D116 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44F6BB951BE4AE5900E3D116 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44F6BB9C1BE4AE5900E3D116;
+			remoteInfo = "dispatch_group_enter的练习";
+		};
+		44F6BBBD1BE4AE5A00E3D116 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44F6BB951BE4AE5900E3D116 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44F6BB9C1BE4AE5900E3D116;
+			remoteInfo = "dispatch_group_enter的练习";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		44F6BB9D1BE4AE5900E3D116 /* dispatch_group_enter的练习.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dispatch_group_enter的练习.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44F6BBA01BE4AE5900E3D116 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		44F6BBA21BE4AE5900E3D116 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		44F6BBA51BE4AE5900E3D116 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		44F6BBA71BE4AE5900E3D116 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44F6BBAA1BE4AE5900E3D116 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		44F6BBAC1BE4AE5900E3D116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44F6BBB11BE4AE5A00E3D116 /* dispatch_group_enter的练习Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dispatch_group_enter的练习Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44F6BBB51BE4AE5A00E3D116 /* dispatch_group_enter___Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "dispatch_group_enter___Tests.swift"; sourceTree = "<group>"; };
+		44F6BBB71BE4AE5A00E3D116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44F6BBBC1BE4AE5A00E3D116 /* dispatch_group_enter的练习UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dispatch_group_enter的练习UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44F6BBC01BE4AE5A00E3D116 /* dispatch_group_enter___UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "dispatch_group_enter___UITests.swift"; sourceTree = "<group>"; };
+		44F6BBC21BE4AE5A00E3D116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44F6BB9A1BE4AE5900E3D116 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44F6BBAE1BE4AE5A00E3D116 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44F6BBB91BE4AE5A00E3D116 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44F6BB941BE4AE5900E3D116 = {
+			isa = PBXGroup;
+			children = (
+				44F6BB9F1BE4AE5900E3D116 /* dispatch_group_enter的练习 */,
+				44F6BBB41BE4AE5A00E3D116 /* dispatch_group_enter的练习Tests */,
+				44F6BBBF1BE4AE5A00E3D116 /* dispatch_group_enter的练习UITests */,
+				44F6BB9E1BE4AE5900E3D116 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		44F6BB9E1BE4AE5900E3D116 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44F6BB9D1BE4AE5900E3D116 /* dispatch_group_enter的练习.app */,
+				44F6BBB11BE4AE5A00E3D116 /* dispatch_group_enter的练习Tests.xctest */,
+				44F6BBBC1BE4AE5A00E3D116 /* dispatch_group_enter的练习UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44F6BB9F1BE4AE5900E3D116 /* dispatch_group_enter的练习 */ = {
+			isa = PBXGroup;
+			children = (
+				44F6BBA01BE4AE5900E3D116 /* AppDelegate.swift */,
+				44F6BBA21BE4AE5900E3D116 /* ViewController.swift */,
+				44F6BBA41BE4AE5900E3D116 /* Main.storyboard */,
+				44F6BBA71BE4AE5900E3D116 /* Assets.xcassets */,
+				44F6BBA91BE4AE5900E3D116 /* LaunchScreen.storyboard */,
+				44F6BBAC1BE4AE5900E3D116 /* Info.plist */,
+			);
+			path = "dispatch_group_enter的练习";
+			sourceTree = "<group>";
+		};
+		44F6BBB41BE4AE5A00E3D116 /* dispatch_group_enter的练习Tests */ = {
+			isa = PBXGroup;
+			children = (
+				44F6BBB51BE4AE5A00E3D116 /* dispatch_group_enter___Tests.swift */,
+				44F6BBB71BE4AE5A00E3D116 /* Info.plist */,
+			);
+			path = "dispatch_group_enter的练习Tests";
+			sourceTree = "<group>";
+		};
+		44F6BBBF1BE4AE5A00E3D116 /* dispatch_group_enter的练习UITests */ = {
+			isa = PBXGroup;
+			children = (
+				44F6BBC01BE4AE5A00E3D116 /* dispatch_group_enter___UITests.swift */,
+				44F6BBC21BE4AE5A00E3D116 /* Info.plist */,
+			);
+			path = "dispatch_group_enter的练习UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44F6BB9C1BE4AE5900E3D116 /* dispatch_group_enter的练习 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44F6BBC51BE4AE5A00E3D116 /* Build configuration list for PBXNativeTarget "dispatch_group_enter的练习" */;
+			buildPhases = (
+				44F6BB991BE4AE5900E3D116 /* Sources */,
+				44F6BB9A1BE4AE5900E3D116 /* Frameworks */,
+				44F6BB9B1BE4AE5900E3D116 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "dispatch_group_enter的练习";
+			productName = "dispatch_group_enter的练习";
+			productReference = 44F6BB9D1BE4AE5900E3D116 /* dispatch_group_enter的练习.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44F6BBB01BE4AE5A00E3D116 /* dispatch_group_enter的练习Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44F6BBC81BE4AE5A00E3D116 /* Build configuration list for PBXNativeTarget "dispatch_group_enter的练习Tests" */;
+			buildPhases = (
+				44F6BBAD1BE4AE5A00E3D116 /* Sources */,
+				44F6BBAE1BE4AE5A00E3D116 /* Frameworks */,
+				44F6BBAF1BE4AE5A00E3D116 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44F6BBB31BE4AE5A00E3D116 /* PBXTargetDependency */,
+			);
+			name = "dispatch_group_enter的练习Tests";
+			productName = "dispatch_group_enter的练习Tests";
+			productReference = 44F6BBB11BE4AE5A00E3D116 /* dispatch_group_enter的练习Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		44F6BBBB1BE4AE5A00E3D116 /* dispatch_group_enter的练习UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44F6BBCB1BE4AE5A00E3D116 /* Build configuration list for PBXNativeTarget "dispatch_group_enter的练习UITests" */;
+			buildPhases = (
+				44F6BBB81BE4AE5A00E3D116 /* Sources */,
+				44F6BBB91BE4AE5A00E3D116 /* Frameworks */,
+				44F6BBBA1BE4AE5A00E3D116 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44F6BBBE1BE4AE5A00E3D116 /* PBXTargetDependency */,
+			);
+			name = "dispatch_group_enter的练习UITests";
+			productName = "dispatch_group_enter的练习UITests";
+			productReference = 44F6BBBC1BE4AE5A00E3D116 /* dispatch_group_enter的练习UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44F6BB951BE4AE5900E3D116 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = DamaiPlayBusinessPhone;
+				TargetAttributes = {
+					44F6BB9C1BE4AE5900E3D116 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					44F6BBB01BE4AE5A00E3D116 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 44F6BB9C1BE4AE5900E3D116;
+					};
+					44F6BBBB1BE4AE5A00E3D116 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 44F6BB9C1BE4AE5900E3D116;
+					};
+				};
+			};
+			buildConfigurationList = 44F6BB981BE4AE5900E3D116 /* Build configuration list for PBXProject "dispatch_group_enter的练习" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44F6BB941BE4AE5900E3D116;
+			productRefGroup = 44F6BB9E1BE4AE5900E3D116 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44F6BB9C1BE4AE5900E3D116 /* dispatch_group_enter的练习 */,
+				44F6BBB01BE4AE5A00E3D116 /* dispatch_group_enter的练习Tests */,
+				44F6BBBB1BE4AE5A00E3D116 /* dispatch_group_enter的练习UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44F6BB9B1BE4AE5900E3D116 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44F6BBAB1BE4AE5900E3D116 /* LaunchScreen.storyboard in Resources */,
+				44F6BBA81BE4AE5900E3D116 /* Assets.xcassets in Resources */,
+				44F6BBA61BE4AE5900E3D116 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44F6BBAF1BE4AE5A00E3D116 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44F6BBBA1BE4AE5A00E3D116 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44F6BB991BE4AE5900E3D116 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44F6BBA31BE4AE5900E3D116 /* ViewController.swift in Sources */,
+				44F6BBA11BE4AE5900E3D116 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44F6BBAD1BE4AE5A00E3D116 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44F6BBB61BE4AE5A00E3D116 /* dispatch_group_enter___Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44F6BBB81BE4AE5A00E3D116 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44F6BBC11BE4AE5A00E3D116 /* dispatch_group_enter___UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44F6BBB31BE4AE5A00E3D116 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44F6BB9C1BE4AE5900E3D116 /* dispatch_group_enter的练习 */;
+			targetProxy = 44F6BBB21BE4AE5A00E3D116 /* PBXContainerItemProxy */;
+		};
+		44F6BBBE1BE4AE5A00E3D116 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44F6BB9C1BE4AE5900E3D116 /* dispatch_group_enter的练习 */;
+			targetProxy = 44F6BBBD1BE4AE5A00E3D116 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		44F6BBA41BE4AE5900E3D116 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44F6BBA51BE4AE5900E3D116 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		44F6BBA91BE4AE5900E3D116 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44F6BBAA1BE4AE5900E3D116 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44F6BBC31BE4AE5A00E3D116 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		44F6BBC41BE4AE5A00E3D116 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44F6BBC61BE4AE5A00E3D116 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "dispatch_group_enter的练习/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.damai.dispatch-group-enter---";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		44F6BBC71BE4AE5A00E3D116 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "dispatch_group_enter的练习/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.damai.dispatch-group-enter---";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		44F6BBC91BE4AE5A00E3D116 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "dispatch_group_enter的练习Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.damai.dispatch-group-enter---Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dispatch_group_enter的练习.app/dispatch_group_enter的练习";
+			};
+			name = Debug;
+		};
+		44F6BBCA1BE4AE5A00E3D116 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "dispatch_group_enter的练习Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.damai.dispatch-group-enter---Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dispatch_group_enter的练习.app/dispatch_group_enter的练习";
+			};
+			name = Release;
+		};
+		44F6BBCC1BE4AE5A00E3D116 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "dispatch_group_enter的练习UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.damai.dispatch-group-enter---UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "dispatch_group_enter的练习";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		44F6BBCD1BE4AE5A00E3D116 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "dispatch_group_enter的练习UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.damai.dispatch-group-enter---UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "dispatch_group_enter的练习";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44F6BB981BE4AE5900E3D116 /* Build configuration list for PBXProject "dispatch_group_enter的练习" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44F6BBC31BE4AE5A00E3D116 /* Debug */,
+				44F6BBC41BE4AE5A00E3D116 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44F6BBC51BE4AE5A00E3D116 /* Build configuration list for PBXNativeTarget "dispatch_group_enter的练习" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44F6BBC61BE4AE5A00E3D116 /* Debug */,
+				44F6BBC71BE4AE5A00E3D116 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		44F6BBC81BE4AE5A00E3D116 /* Build configuration list for PBXNativeTarget "dispatch_group_enter的练习Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44F6BBC91BE4AE5A00E3D116 /* Debug */,
+				44F6BBCA1BE4AE5A00E3D116 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		44F6BBCB1BE4AE5A00E3D116 /* Build configuration list for PBXNativeTarget "dispatch_group_enter的练习UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44F6BBCC1BE4AE5A00E3D116 /* Debug */,
+				44F6BBCD1BE4AE5A00E3D116 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44F6BB951BE4AE5900E3D116 /* Project object */;
+}
