@@ -52,6 +52,16 @@ class ViewController: UIViewController {
         
         
         */
+        
+        let  group2  = dispatch_group_create()
+        
+        dispatch_group_enter(group2)
+        
+        dispatch_group_leave(group2)
+        
+        dispatch_group_notify(group2, dispatch_get_main_queue()) { () -> Void in
+            //所有的block完成后的回调
+        }
     
         
     }
