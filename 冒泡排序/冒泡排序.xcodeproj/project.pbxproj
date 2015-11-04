@@ -14,6 +14,7 @@
 		449DAA3A1BDF522C00C212BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 449DAA381BDF522C00C212BD /* LaunchScreen.storyboard */; };
 		449DAA451BDF522C00C212BD /* ____Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449DAA441BDF522C00C212BD /* ____Tests.swift */; };
 		449DAA501BDF522C00C212BD /* ____UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449DAA4F1BDF522C00C212BD /* ____UITests.swift */; };
+		44AB23261BEA5B1100C90FC9 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AB23251BEA5B1100C90FC9 /* Person.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		449DAA4B1BDF522C00C212BD /* 冒泡排序UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "冒泡排序UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		449DAA4F1BDF522C00C212BD /* ____UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "____UITests.swift"; sourceTree = "<group>"; };
 		449DAA511BDF522C00C212BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44AB23251BEA5B1100C90FC9 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				449DAA361BDF522C00C212BD /* Assets.xcassets */,
 				449DAA381BDF522C00C212BD /* LaunchScreen.storyboard */,
 				449DAA3B1BDF522C00C212BD /* Info.plist */,
+				44AB23251BEA5B1100C90FC9 /* Person.swift */,
 			);
 			path = "冒泡排序";
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44AB23261BEA5B1100C90FC9 /* Person.swift in Sources */,
 				449DAA321BDF522C00C212BD /* ViewController.swift in Sources */,
 				449DAA301BDF522C00C212BD /* AppDelegate.swift in Sources */,
 			);
@@ -481,6 +485,7 @@
 				449DAA561BDF522C00C212BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		449DAA571BDF522C00C212BD /* Build configuration list for PBXNativeTarget "冒泡排序Tests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +494,7 @@
 				449DAA591BDF522C00C212BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		449DAA5A1BDF522C00C212BD /* Build configuration list for PBXNativeTarget "冒泡排序UITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +503,7 @@
 				449DAA5C1BDF522C00C212BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -14,7 +14,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         //bubbleSort([1,2,4,3,2,])
-        print(bubbleSort([2,3,6,4,2,8]))
+        //print(bubbleSort([2,3,6,4,2,8]))
+        
+        
+        let p = Person(name: "")
+        
+        p.name = "张三"
+        
+        print("年龄 \(p.name)")
+        
+        print("性别\(p.sex)")
+        
         
 }
     /// 冒泡排序
