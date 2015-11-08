@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var pictureViewConstraits: NSLayoutConstraint!
     
     @IBAction func photoClicked() {
-        pictureViewConstraits.constant = 286
+           pictureViewConstraits.constant = 286
         
     }
 
