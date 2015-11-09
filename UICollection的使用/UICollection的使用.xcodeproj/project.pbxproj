@@ -15,6 +15,7 @@
 		442EF1D41BEF3ADA00EB132A /* UICollection___Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442EF1D31BEF3ADA00EB132A /* UICollection___Tests.swift */; };
 		442EF1DF1BEF3ADA00EB132A /* UICollection___UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442EF1DE1BEF3ADA00EB132A /* UICollection___UITests.swift */; };
 		442EF1ED1BEF415F00EB132A /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442EF1EC1BEF415F00EB132A /* PictureViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		447840A31BF04D3A00A64778 /* DMCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447840A21BF04D3A00A64778 /* DMCollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		442EF1DE1BEF3ADA00EB132A /* UICollection___UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollection___UITests.swift"; sourceTree = "<group>"; };
 		442EF1E01BEF3ADA00EB132A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		442EF1EC1BEF415F00EB132A /* PictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
+		447840A21BF04D3A00A64778 /* DMCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				442EF1C71BEF3ADA00EB132A /* LaunchScreen.storyboard */,
 				442EF1CA1BEF3ADA00EB132A /* Info.plist */,
 				442EF1EC1BEF415F00EB132A /* PictureViewController.swift */,
+				447840A21BF04D3A00A64778 /* DMCollectionViewCell.swift */,
 			);
 			path = "UICollection的使用";
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				442EF1C11BEF3ADA00EB132A /* ViewController.swift in Sources */,
+				447840A31BF04D3A00A64778 /* DMCollectionViewCell.swift in Sources */,
 				442EF1ED1BEF415F00EB132A /* PictureViewController.swift in Sources */,
 				442EF1BF1BEF3ADA00EB132A /* AppDelegate.swift in Sources */,
 			);
@@ -485,6 +489,7 @@
 				442EF1E51BEF3ADA00EB132A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		442EF1E61BEF3ADA00EB132A /* Build configuration list for PBXNativeTarget "UICollection的使用Tests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +498,7 @@
 				442EF1E81BEF3ADA00EB132A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		442EF1E91BEF3ADA00EB132A /* Build configuration list for PBXNativeTarget "UICollection的使用UITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +507,7 @@
 				442EF1EB1BEF3ADA00EB132A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

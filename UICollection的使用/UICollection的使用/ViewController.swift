@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var pictureViewConstraits: NSLayoutConstraint!
     
     @IBAction func photoClicked() {
-           pictureViewConstraits.constant = 286
+    pictureViewConstraits.constant = 286
         
     }
 
@@ -21,9 +21,20 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        //接收通知
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "selectImage", name: DMButonClicked, object: nil)
+        
         //设置照片容器视图的约束
         pictureViewConstraits.constant = 0;
         
+    }
+    
+    deinit{
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+    
+    func selectImage(){
+        print("\(__FUNCTION__)")
     }
 
     override func didReceiveMemoryWarning() {
