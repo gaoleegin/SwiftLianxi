@@ -37,16 +37,11 @@ class ViewController: UIViewController {
 
 extension ViewController:UINavigationControllerDelegate,UIImagePickerControllerDelegate{
     
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
-        dismissViewControllerAnimated(true, completion: nil)
-    }    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
+        dismissViewControllerAnimated(true) { () -> Void in
+            PictureViewController.imageArrsay.append(image)
+        }
+    }
 }
-
-
-
-
-
-
-
 
 
