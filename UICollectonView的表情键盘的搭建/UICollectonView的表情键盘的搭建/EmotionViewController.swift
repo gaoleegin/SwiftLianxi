@@ -12,115 +12,74 @@ class EmotionViewController: UIViewController {
 
     
     lazy var toolBar:UIToolbar = {
+        let toolbar = UIToolbar(frame: CGRectZero)
         
-        let tool = UIToolbar(frame: CGRectZero)
+        //在这里添加每一个的item
         
+        var itemsList = [UIBarButtonItem]()
         
-        var baritems:[UIBarButtonItem] = [UIBarButtonItem]()
+        var index:Int = 0
         
-        var index = 0
-        
-        for str in ["最近","最近","最近","最近"] {
-            let bar = UIBarButtonItem(title: str, style: UIBarButtonItemStyle.Plain, target: self, action: "selectItem:")
-            bar.tag = index
-            baritems.append(bar)
+        for itemstr in ["最近","最近","最近","最近","最近"] {
             
-            //添加弹簧
-            if index++ < 3 {
-                let item = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil)
-                baritems.append(item)
+            let item = UIBarButtonItem(title: itemstr, style: UIBarButtonItemStyle.Plain, target: self, action: "")
+            itemsList.append(item)
+            
+            if index++ < 4 {
+                let flexItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil)
+                itemsList.append(flexItem)
             }
+            
         }
+        toolbar.items = itemsList
         
-        tool.tintColor = UIColor.darkGrayColor()
-        tool.items = baritems
-        
-        return tool
+        toolbar.tintColor = UIColor.darkGrayColor()
+        return toolbar
     }()
     
-        lazy var emotionView:UICollectionView = {
-            
-            let layout = UICollectionViewFlowLayout()
-            layout.itemSize = CGSizeMake(30, 30)
-            layout.scrollDirection = UICollectionViewScrollDirection.Horizontal
-//            layout.minimumInteritemSpacing = 0
-//            layout.minimumLineSpacing = 0
-            layout.sectionInset = UIEdgeInsetsMake(5, 5, 5, 5)
-            
-            
-            let emotionCollection:UICollectionView = UICollectionView(frame: CGRectZero, collectionViewLayout: layout)
-            
-            emotionCollection.delegate = self
-            emotionCollection.dataSource = self
-            emotionCollection.pagingEnabled = true
-            emotionCollection.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: "collectionCell")
-            
-            return emotionCollection
-        }()
+    lazy var collectionView:UICollectionView = {
+        
+        //UICollectionView必须有一个布局
+        let layout = UICollectionViewFlowLayout()
+        let collection = UICollectionView(frame: CGRectZero, collectionViewLayout: layout)
+        return collection
+    }()
     
-    
-    func selectItem(selectItemIndex:UIBarButtonItem){
-        print(selectItemIndex.tag)
-    }
-    
-    /*
-        UI的组成，
-    */
-    //自定义键盘的fram是需要考虑的
     override func loadView() {
         super.loadView()
-        
-        //设置UI
         setupUI()
-        
-        
     }
     
     private func setupUI(){
+        self.view.addSubview(toolBar)
+        self.view.addSubview(collectionView)
         
+        //在这里进行布局
         
-        //添加toolBar
-        view.addSubview(toolBar)
-        //添加表情键盘
-        view.addSubview(emotionView)
+        toolBar.translatesAutoresizingMaskIntoConstraints = false
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
         
         var cons = [NSLayoutConstraint]()
         
-        toolBar.translatesAutoresizingMaskIntoConstraints = false
-        emotionView.translatesAutoresizingMaskIntoConstraints = false
+        cons += NSLayoutConstraint.constraintsWithVisualFormat("H:|-0-[toolBar]-0-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["toolBar":toolBar])
         
-       cons += NSLayoutConstraint.constraintsWithVisualFormat("H:|-0-[emotionView]-0-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["emotionView":emotionView])
+       cons += NSLayoutConstraint.constraintsWithVisualFormat("H:|-0-[collectionView]-0-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["collectionView":collectionView])
         
-      cons += NSLayoutConstraint.constraintsWithVisualFormat("H:|-0-[toolBar]-0-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["toolBar":toolBar])
-        
-     cons += NSLayoutConstraint.constraintsWithVisualFormat("V:|-0-[emotionView]-[toolBar(44)]-0-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["emotionView":emotionView,"toolBar":toolBar])
-        
+       cons += NSLayoutConstraint.constraintsWithVisualFormat("V:|-0-[collectionView]-[toolBar(44)]-0-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["toolBar":toolBar,"collectionView":collectionView])
         view.addConstraints(cons)
     }
     
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
        
         view.backgroundColor = UIColor.redColor()
         
-        //setTranslatesAutoresizingMaskIntoConstraints
-     
+        
     }
 }
 
-extension EmotionViewController:UICollectionViewDelegate,UICollectionViewDataSource{
-    
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 21 * 3
-    }
-    
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("collectionCell", forIndexPath: indexPath)
-        cell.backgroundColor = UIColor.redColor()
-        return cell
-    }
-}
+
 
 
 
