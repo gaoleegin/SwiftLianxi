@@ -50,11 +50,15 @@ class EmotionViewController: UIViewController {
         setupUI()
     }
     
+    
+
+    
     private func setupUI(){
         self.view.addSubview(toolBar)
         self.view.addSubview(collectionView)
         
         //在这里进行布局
+        
         
         toolBar.translatesAutoresizingMaskIntoConstraints = false
         collectionView.translatesAutoresizingMaskIntoConstraints = false
