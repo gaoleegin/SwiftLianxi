@@ -16,6 +16,9 @@
 
 @implementation ViewController
 
+typedef int (^SumP)(int,int);
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -26,7 +29,7 @@
     [nextBtn addTarget:self action:@selector(btnClicked) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:nextBtn];
     
-        
+    
     
     
 }
