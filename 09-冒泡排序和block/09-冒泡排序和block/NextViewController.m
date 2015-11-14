@@ -28,7 +28,15 @@
     self.title = @"我是一个好人";
     
     
-   
+    UIButton *nextVCButton = [[UIButton alloc]init];
+    nextVCButton.frame = CGRectMake(40, 240, 40, 40);
+    nextVCButton.backgroundColor = [UIColor blackColor];
+    
+    
+    
+    
+    
+    [self.view addSubview:nextVCButton];
     
     
     
@@ -44,6 +52,8 @@
    NSString *returntitle =  self.returnBlock(self.title);
     
     NSLog(@"%@",returntitle);
+    
+    
     
     
     

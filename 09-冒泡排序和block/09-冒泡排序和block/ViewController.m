@@ -28,7 +28,7 @@
     
      */
     
-   
+    
     
     
       [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(returnDataFromNotification) name:@"LJTextNotification" object:nil];

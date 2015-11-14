@@ -1,15 +1,15 @@
 //
-//  ____Tests.swift
-//  冒泡排序Tests
+//  _00_Swift___Tests.swift
+//  100-Swift通知的Tests
 //
-//  Created by 高李军 on 15/10/27.
-//  Copyright © 2015年 DamaiPlayBusinessPhone. All rights reserved.
+//  Created by 高李军 on 15/11/13.
+//  Copyright © 2015年 高李军. All rights reserved.
 //
 
 import XCTest
-@testable import ____
+@testable import _00_Swift___
 
-class ____Tests: XCTestCase {
+class _00_Swift___Tests: XCTestCase {
     
     override func setUp() {
         super.setUp()

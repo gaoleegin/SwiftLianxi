@@ -1,14 +1,14 @@
 //
-//  ____UITests.swift
-//  冒泡排序UITests
+//  _00_Swift___UITests.swift
+//  100-Swift通知的UITests
 //
-//  Created by 高李军 on 15/10/27.
-//  Copyright © 2015年 DamaiPlayBusinessPhone. All rights reserved.
+//  Created by 高李军 on 15/11/13.
+//  Copyright © 2015年 高李军. All rights reserved.
 //
 
 import XCTest
 
-class ____UITests: XCTestCase {
+class _00_Swift___UITests: XCTestCase {
         
     override func setUp() {
         super.setUp()

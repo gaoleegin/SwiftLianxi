@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  冒泡排序
+//  100-Swift通知的
 //
-//  Created by 高李军 on 15/10/27.
-//  Copyright © 2015年 DamaiPlayBusinessPhone. All rights reserved.
+//  Created by 高李军 on 15/11/13.
+//  Copyright © 2015年 高李军. All rights reserved.
 //
 
 import UIKit
