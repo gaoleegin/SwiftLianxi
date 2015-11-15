@@ -7,92 +7,115 @@
 //
 
 #import "ProfileTableViewController.h"
+#import "GroupItem.h"
+#import "SettingItem.h"
 
-@interface ProfileTableViewController ()
+@interface ProfileTableViewController ()<UITableViewDataSource,UITableViewDelegate>
+
+@property(nonatomic,strong)NSMutableArray *groupArray;
 
 @end
 
 @implementation ProfileTableViewController
 
+-(NSMutableArray *)groupArray{
+    if (_groupArray==nil) {
+        _groupArray = [NSMutableArray array];
+    }
+    return _groupArray;
+}
+
+-(void)loadView{
+    
+    UITableView *mainTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen  mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height) style:UITableViewStyleGrouped];
+    
+    mainTableView.delegate = self;
+    mainTableView.dataSource = self;
+    
+    
+    self.view = mainTableView;
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.title = @"我的";
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    [self setGroup1];
+    [self setGroup2];
+    [self setGroup3];
+}
+
+
+
+-(void)setGroup1{
+    GroupItem *group = [[GroupItem alloc]init];
+    SettingItem *item1 = [SettingItem initWithitemTitle:@"我的收藏"];
+    SettingItem *item2 = [SettingItem initWithitemTitle:@"我的账号"];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
-}
-
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    group.items = @[item1,item2];
     
-    // Configure the cell...
+    [self.groupArray addObject:group];
+    
+}
+
+-(void)setGroup2{
+    GroupItem *group = [[GroupItem alloc]init];
+    SettingItem *item1 = [SettingItem initWithitemTitle:@"我要吐槽"];
+    SettingItem *item2 = [SettingItem initWithitemTitle:@"我要评价"];
+    
+    group.items = @[item1,item2];
+    
+    [self.groupArray addObject:group];
+    
+}
+
+-(void)setGroup3{
+    GroupItem *group = [[GroupItem alloc]init];
+    SettingItem *item1 = [SettingItem initWithitemTitle:@"关于我们"];
+    SettingItem *item2 = [SettingItem initWithitemTitle:@"关注我们"];
+    
+    group.items = @[item1,item2];
+    
+    [self.groupArray addObject:group];
+    
+}
+
+
+
+
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    GroupItem *grourItem = self.groupArray[section];
+
+    return grourItem.items.count;
+}
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return self.groupArray.count;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString *cellID = @"cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    if (cell==nil) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
+    }
+    
+    
+    GroupItem *grourItem = self.groupArray[indexPath.section];
+    
+    SettingItem *items = grourItem.items[indexPath.row];
+    
+    cell.textLabel.text = items.itemTitle;
+    
+    
+    
     
     return cell;
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

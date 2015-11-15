@@ -10,4 +10,10 @@
 
 @implementation SettingItem
 
++(instancetype)initWithitemTitle:(NSString *)title{
+    SettingItem *item = [[SettingItem alloc]init];
+    item.itemTitle = title;
+    return item;
+}
+
 @end

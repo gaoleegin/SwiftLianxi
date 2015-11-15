@@ -10,4 +10,10 @@
 
 @implementation Item
 
++(instancetype)itemWithTitle:(NSString*)title{
+    Item *item = [[Item alloc]init];
+    item.title = title;
+    return item;
+}
+
 @end

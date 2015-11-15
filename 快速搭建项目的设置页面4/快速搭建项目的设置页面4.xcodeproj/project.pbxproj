@@ -15,6 +15,9 @@
 		446140B71BF838AB0031EC45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 446140B51BF838AB0031EC45 /* LaunchScreen.storyboard */; };
 		446140C21BF838AB0031EC45 /* ___________4Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 446140C11BF838AB0031EC45 /* ___________4Tests.m */; };
 		446140CD1BF838AB0031EC45 /* ___________4UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 446140CC1BF838AB0031EC45 /* ___________4UITests.m */; };
+		44B31CD41BF83E6100EE5E49 /* ProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B31CD31BF83E6100EE5E49 /* ProfileTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		44B31CD71BF845F300EE5E49 /* GroupItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B31CD61BF845F300EE5E49 /* GroupItem.m */; settings = {ASSET_TAGS = (); }; };
+		44B31CDA1BF846B200EE5E49 /* SettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B31CD91BF846B200EE5E49 /* SettingItem.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		446140C81BF838AB0031EC45 /* 快速搭建项目的设置页面4UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "快速搭建项目的设置页面4UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		446140CC1BF838AB0031EC45 /* ___________4UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___________4UITests.m"; sourceTree = "<group>"; };
 		446140CE1BF838AB0031EC45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44B31CD21BF83E6100EE5E49 /* ProfileTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileTableViewController.h; sourceTree = "<group>"; };
+		44B31CD31BF83E6100EE5E49 /* ProfileTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileTableViewController.m; sourceTree = "<group>"; };
+		44B31CD51BF845F300EE5E49 /* GroupItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupItem.h; sourceTree = "<group>"; };
+		44B31CD61BF845F300EE5E49 /* GroupItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupItem.m; sourceTree = "<group>"; };
+		44B31CD81BF846B200EE5E49 /* SettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingItem.h; sourceTree = "<group>"; };
+		44B31CD91BF846B200EE5E49 /* SettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +119,12 @@
 				446140B51BF838AB0031EC45 /* LaunchScreen.storyboard */,
 				446140B81BF838AB0031EC45 /* Info.plist */,
 				446140A71BF838AB0031EC45 /* Supporting Files */,
+				44B31CD21BF83E6100EE5E49 /* ProfileTableViewController.h */,
+				44B31CD31BF83E6100EE5E49 /* ProfileTableViewController.m */,
+				44B31CD51BF845F300EE5E49 /* GroupItem.h */,
+				44B31CD61BF845F300EE5E49 /* GroupItem.m */,
+				44B31CD81BF846B200EE5E49 /* SettingItem.h */,
+				44B31CD91BF846B200EE5E49 /* SettingItem.m */,
 			);
 			path = "快速搭建项目的设置页面4";
 			sourceTree = "<group>";
@@ -270,9 +285,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44B31CD71BF845F300EE5E49 /* GroupItem.m in Sources */,
 				446140AF1BF838AB0031EC45 /* ViewController.m in Sources */,
 				446140AC1BF838AB0031EC45 /* AppDelegate.m in Sources */,
 				446140A91BF838AB0031EC45 /* main.m in Sources */,
+				44B31CD41BF83E6100EE5E49 /* ProfileTableViewController.m in Sources */,
+				44B31CDA1BF846B200EE5E49 /* SettingItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +514,7 @@
 				446140D31BF838AB0031EC45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		446140D41BF838AB0031EC45 /* Build configuration list for PBXNativeTarget "快速搭建项目的设置页面4Tests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +523,7 @@
 				446140D61BF838AB0031EC45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		446140D71BF838AB0031EC45 /* Build configuration list for PBXNativeTarget "快速搭建项目的设置页面4UITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +532,7 @@
 				446140D91BF838AB0031EC45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,4 +10,9 @@
 
 @interface SettingItem : NSObject
 
+@property(nonatomic,copy) NSString *itemTitle;
+
++(instancetype)initWithitemTitle:(NSString *)title;
+
+
 @end

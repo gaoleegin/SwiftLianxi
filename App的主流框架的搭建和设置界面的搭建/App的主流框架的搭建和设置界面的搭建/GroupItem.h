@@ -10,4 +10,11 @@
 
 @interface GroupItem : NSObject
 
+@property(nonatomic,copy)NSString *headerTitle;
+
+@property(nonatomic,copy)NSString *FooterTitle;
+
+@property(nonatomic,strong)NSArray *items;
+
+
 @end

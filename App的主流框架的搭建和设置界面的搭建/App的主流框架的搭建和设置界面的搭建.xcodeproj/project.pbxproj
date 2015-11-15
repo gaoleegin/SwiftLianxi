@@ -15,6 +15,9 @@
 		444D39CD1BF85E6700013118 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 444D39CB1BF85E6700013118 /* LaunchScreen.storyboard */; };
 		444D39D81BF85E6700013118 /* App________________Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 444D39D71BF85E6700013118 /* App________________Tests.m */; };
 		444D39E31BF85E6700013118 /* App________________UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 444D39E21BF85E6700013118 /* App________________UITests.m */; };
+		444D39F21BF8621200013118 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 444D39F11BF8621200013118 /* ProfileViewController.m */; settings = {ASSET_TAGS = (); }; };
+		444D39F51BF8645100013118 /* GroupItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 444D39F41BF8645100013118 /* GroupItem.m */; settings = {ASSET_TAGS = (); }; };
+		444D39F81BF8650C00013118 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 444D39F71BF8650C00013118 /* Item.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		444D39DE1BF85E6700013118 /* App的主流框架的搭建和设置界面的搭建UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "App的主流框架的搭建和设置界面的搭建UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		444D39E21BF85E6700013118 /* App________________UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "App________________UITests.m"; sourceTree = "<group>"; };
 		444D39E41BF85E6700013118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		444D39F01BF8621200013118 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		444D39F11BF8621200013118 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		444D39F31BF8645100013118 /* GroupItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupItem.h; sourceTree = "<group>"; };
+		444D39F41BF8645100013118 /* GroupItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupItem.m; sourceTree = "<group>"; };
+		444D39F61BF8650C00013118 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Item.h; path = ../Item.h; sourceTree = "<group>"; };
+		444D39F71BF8650C00013118 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Item.m; path = ../Item.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +119,12 @@
 				444D39CB1BF85E6700013118 /* LaunchScreen.storyboard */,
 				444D39CE1BF85E6700013118 /* Info.plist */,
 				444D39BD1BF85E6700013118 /* Supporting Files */,
+				444D39F01BF8621200013118 /* ProfileViewController.h */,
+				444D39F11BF8621200013118 /* ProfileViewController.m */,
+				444D39F61BF8650C00013118 /* Item.h */,
+				444D39F71BF8650C00013118 /* Item.m */,
+				444D39F31BF8645100013118 /* GroupItem.h */,
+				444D39F41BF8645100013118 /* GroupItem.m */,
 			);
 			path = "App的主流框架的搭建和设置界面的搭建";
 			sourceTree = "<group>";
@@ -270,8 +285,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				444D39F81BF8650C00013118 /* Item.m in Sources */,
+				444D39F51BF8645100013118 /* GroupItem.m in Sources */,
 				444D39C51BF85E6700013118 /* ViewController.m in Sources */,
 				444D39C21BF85E6700013118 /* AppDelegate.m in Sources */,
+				444D39F21BF8621200013118 /* ProfileViewController.m in Sources */,
 				444D39BF1BF85E6700013118 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

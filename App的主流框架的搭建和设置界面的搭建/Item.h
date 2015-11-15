@@ -10,4 +10,8 @@
 
 @interface Item : NSObject
 
+@property(nonatomic,copy)NSString *title;
+
++(instancetype)itemWithTitle:(NSString *)title;
+
 @end
