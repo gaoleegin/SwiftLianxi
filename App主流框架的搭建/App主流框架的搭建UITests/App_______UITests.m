@@ -37,4 +37,9 @@
     // Use XCTAssert and related functions to verify your tests produce the correct results.
 }
 
+- (void)testExample2
+{
+    XCTAssertTrue(1 == 1, @"just a test");
+}
+
 @end

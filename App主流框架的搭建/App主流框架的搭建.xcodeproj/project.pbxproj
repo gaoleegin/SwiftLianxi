@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4419E66B1BF8D34000C5F057 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4419E66A1BF8D34000C5F057 /* DataModel.m */; settings = {ASSET_TAGS = (); }; };
+		4419E66E1BF8D46300C5F057 /* DataModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4419E66D1BF8D46300C5F057 /* DataModelTests.m */; settings = {ASSET_TAGS = (); }; };
 		444D39801BF853E100013118 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 444D397F1BF853E100013118 /* main.m */; };
 		444D39831BF853E100013118 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 444D39821BF853E100013118 /* AppDelegate.m */; };
 		444D39861BF853E100013118 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 444D39851BF853E100013118 /* ViewController.m */; };
@@ -35,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4419E6691BF8D34000C5F057 /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataModel.h; path = ../DataModel.h; sourceTree = "<group>"; };
+		4419E66A1BF8D34000C5F057 /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataModel.m; path = ../DataModel.m; sourceTree = "<group>"; };
+		4419E66C1BF8D46300C5F057 /* DataModelTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModelTests.h; sourceTree = "<group>"; };
+		4419E66D1BF8D46300C5F057 /* DataModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModelTests.m; sourceTree = "<group>"; };
 		444D397B1BF853E100013118 /* App主流框架的搭建.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App主流框架的搭建.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		444D397F1BF853E100013118 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		444D39811BF853E100013118 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -104,6 +110,8 @@
 				444D39811BF853E100013118 /* AppDelegate.h */,
 				444D39821BF853E100013118 /* AppDelegate.m */,
 				444D39841BF853E100013118 /* ViewController.h */,
+				4419E6691BF8D34000C5F057 /* DataModel.h */,
+				4419E66A1BF8D34000C5F057 /* DataModel.m */,
 				444D39851BF853E100013118 /* ViewController.m */,
 				444D39871BF853E100013118 /* Main.storyboard */,
 				444D398A1BF853E100013118 /* Assets.xcassets */,
@@ -125,6 +133,8 @@
 		444D39971BF853E100013118 /* App主流框架的搭建Tests */ = {
 			isa = PBXGroup;
 			children = (
+				4419E66C1BF8D46300C5F057 /* DataModelTests.h */,
+				4419E66D1BF8D46300C5F057 /* DataModelTests.m */,
 				444D39981BF853E100013118 /* App_______Tests.m */,
 				444D399A1BF853E100013118 /* Info.plist */,
 			);
@@ -271,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				444D39861BF853E100013118 /* ViewController.m in Sources */,
+				4419E66B1BF8D34000C5F057 /* DataModel.m in Sources */,
 				444D39831BF853E100013118 /* AppDelegate.m in Sources */,
 				444D39801BF853E100013118 /* main.m in Sources */,
 			);
@@ -281,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				444D39991BF853E100013118 /* App_______Tests.m in Sources */,
+				4419E66E1BF8D46300C5F057 /* DataModelTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +508,7 @@
 				444D39AA1BF853E100013118 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		444D39AB1BF853E100013118 /* Build configuration list for PBXNativeTarget "App主流框架的搭建Tests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +517,7 @@
 				444D39AD1BF853E100013118 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		444D39AE1BF853E100013118 /* Build configuration list for PBXNativeTarget "App主流框架的搭建UITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +526,7 @@
 				444D39B01BF853E100013118 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

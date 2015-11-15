@@ -46,6 +46,11 @@ class  simpleClass: ExampleProtocol{
 }
 
 
+print("hello")
+
+print("hell0", separator: "", terminator: "hello")
+
+prin
 
 
 
