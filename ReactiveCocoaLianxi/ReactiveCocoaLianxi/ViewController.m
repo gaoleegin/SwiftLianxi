@@ -10,6 +10,7 @@
 #import "ReactiveCocoa.h"
 #import "NexViewController.h"
 #import "flagsModel.h"
+#import "LJDummySignInService.h"
 
 
 @interface ViewController ()
@@ -20,6 +21,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *username;
 @property (weak, nonatomic) IBOutlet UITextField *passWord;
 @property (weak, nonatomic) IBOutlet UIButton *loginBtn;
+
+@property(strong,nonatomic) LJDummySignInService *service;
 
 @end
 
@@ -36,13 +39,35 @@
     return passWord.length > 3;
 }
 
+-(RACSignal *)getsignal{
+    
+    return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        
+        [self.service signInWithUsername:self.username.text password:self.passWord.text complicate:^(BOOL success) {
+            [subscriber sendNext:@"哈哈哈啊好"];
+            [subscriber sendCompleted];
+        }];
+        return nil;
+        
+    }];
+    
+    
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     
     //换一种思路
+    self.service = [[LJDummySignInService alloc]init];
     
+    RACSignal *signal =  [self getsignal];
+    
+    //先就是发送一条消息，然后就是订阅是否成功，真的就是是否成功
+//    [signal subscribeNext:^(id x) {
+//        NSLog(@"%@",x);
+//    }];
     
     RACSignal *validUserNameSignal = [self.username.rac_textSignal map:^id(NSString *text) {
         return @([self isValidUserName:text]);
@@ -83,11 +108,12 @@
     }];
     
     
-    //处理按钮点击事件,给按钮添加点击事件,block的参数是当前控件的一些信息
-    [[self.loginBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
-        NSLog(@"按钮已经被点击 %@",x);
-    }];
+//    //处理按钮点击事件,给按钮添加点击事件,block的参数是当前控件的一些信息
+//    [[[self.loginBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+//        
+//    }] don]
     
+    //[self.loginBtn rac_signalForControlEvents:UIControlEventTouchUpInside]
     
     
     
@@ -137,8 +163,16 @@
 //        return [length integerValue] >3;
 //    }] subscribeNext:^(id x) {
 //        NSLog(@"========%@",x);
-//    }];
+//  、、  }];
     
+    
+    [[[self.loginBtn rac_signalForControlEvents:UIControlEventTouchUpInside] map:^id(id value) {
+        return [self getsignal];
+    }] subscribeNext:^(RACSignal *signal) {
+        [signal subscribeNext:^(NSString *str) {
+            NSLog(@"=======%@",str);
+        }];
+    }];
     
     
     
