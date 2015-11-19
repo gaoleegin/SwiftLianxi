@@ -32,6 +32,36 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self demo44];
+}
+
+-(void)demo44{
+    
+    //block是一段准备好的代码，在适当的时间执行
+    //当在block内部访问外部的变量的时候，会将这个外部
+    //如果想在block内部修改外部变量，则需要在定义变量的时间在前面加上__block关键字
+    
+    
+    //block一定义出来实在全局区，如果要访问外部变量，就是在引用外部变量的时间，就是讲block放在堆区（此时分为ARC喝MRC，在ARC的时间，会将这个把lock拷贝在堆区，而在MRC中会将这个block拷贝在栈区）
+    
+    int i = 0;//0x7fff58f2a9e8 栈区
+    
+    NSLog(@"地址＝＝＝＝＝%p",&i);
+    
+    void (^myBlock)(NSString *) = ^(NSString *str){
+        NSLog(@"======%d",i);
+         NSLog(@"%p",&i);
+        //0x7f9b3d018ec8 堆区
+    };
+    
+    myBlock(@"hahah");
+    
+     NSLog(@"%p",&i);
+    
+}
+
+
+-(void)demo55{
     //ReactiveCocoa开始使用，本质就是添加分类，真的就是添加分类
     
     //可以监听文本框的输入的数据，在这有一个需求就是返回的值是文本框字符串输入的长度
@@ -41,11 +71,13 @@
         return [validuserName boolValue]?[UIColor redColor]:[UIColor clearColor];
     }];
     
-    RACSignal *passwordSignal = [[[self.passwordField rac_textSignal] map:^id(id value) {
-        return @([self isvalidPassword]);
-    }] map:^id(NSNumber *isvalidPassWord) {
-        return [isvalidPassWord boolValue]?[UIColor redColor]:[UIColor clearColor];
-    }];
+    RACSignal *passwordSignal = [[[self.passwordField rac_textSignal]
+                                  map:^id(id value) {
+                                      return @([self isvalidPassword]);
+                                  }]
+                                 map:^id(NSNumber *isvalidPassWord) {
+                                     return [isvalidPassWord boolValue]?[UIColor redColor]:[UIColor clearColor];
+                                 }];
     
     //通过上面的几行引出来一个RAC
     RAC(self.usernameField,backgroundColor) = [userNameSignale map:^id(UIColor *color) {
@@ -63,11 +95,19 @@
     }];
     
     
+    RACDisposable  *subScription = [combineSignal subscribeNext:^(id x) {
+        
+    }];
+    
+    [subScription dispose];
+    
+    
+    __weak __typeof(&*self)weakSelf = self;
     //根据两个文本框来确定按钮的点击状态
     [combineSignal subscribeNext:^(NSNumber *isenable) {
-        self.logingBtn.enabled = [isenable boolValue];
+        weakSelf.logingBtn.enabled = [isenable boolValue];
     }];
-
+    
     //给按钮添加点击信号
     [[self.logingBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
         NSLog(@"按钮已经惦记了");
@@ -75,9 +115,10 @@
         [[self getSigna] subscribeNext:^(id x) {
             NSLog(@"====返回来的东西========%@",x);
         }];
-        
+    
         
     }];
+
 }
 
 
