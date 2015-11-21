@@ -17,28 +17,76 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [self GCDDemo2];
+    [self GCDGroupDemo1];
 }
 
 
--(void)GCDDemo2{
+-(void)GCDGroupDemo1{
+    //1.创建队列组
+    dispatch_group_t group = dispatch_group_create();
+    //2.创建队列
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    //3.多次使用队列组的方法执行任务, 只有异步方法
+    //3.1.执行3次循环
+    dispatch_group_async(group, queue, ^{
+        for (NSInteger i = 0; i < 2; i++) {
+            NSLog(@"group-01 - %@", [NSThread currentThread]);
+        }
+    });
     
-    //队列的种类：串行队列，并发队列，全局队列，主队列
-    //任务分为：同步任务，异步任务
+    //3.2.主队列执行8次循环
+    dispatch_group_async(group, dispatch_get_main_queue(), ^{
+        for (NSInteger i = 0; i < 3; i++) {
+            NSLog(@"group-02 - %@", [NSThread currentThread]);
+        }
+    });
     
-    //Pthreads
+    //3.3.执行5次循环
+    dispatch_group_async(group, queue, ^{
+        for (NSInteger i = 0; i < 3; i++) {
+            NSLog(@"group-03 - %@", [NSThread currentThread]);
+        }
+    });
+    //4.都完成后会自动通知
+    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+        NSLog(@"完成 - %@", [NSThread currentThread]);
+    });
+}
+
+
+
+
+-(void)GCDDemo{
+    dispatch_queue_t queue = dispatch_queue_create("serialqueue", DISPATCH_QUEUE_SERIAL);
+    for (int i = 0; i<5; i++) {
+        dispatch_async(queue, ^{
+            NSLog(@"%@=====%d",[NSThread currentThread],i);
+        });
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-(void)phreadsDemo{
     
     pthread_t thread;
     pthread_create(&thread, NULL, start, NULL);
-    
-    
 }
 
 void *start(void *data){
-
     NSLog(@"%@",[NSThread currentThread]);
-    
     return NULL;
 }
 
