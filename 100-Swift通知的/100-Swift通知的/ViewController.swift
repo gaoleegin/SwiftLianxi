@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         
         complication(title: "fanhui")
         
-        return "很好啊"
+        return "";
     }
     
     
