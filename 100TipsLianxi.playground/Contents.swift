@@ -19,3 +19,7 @@ struct MyCar: Vehicle {
         color = UIColor.redColor()
     }
 }
+
+func demo(){
+    nsinvoca
+}

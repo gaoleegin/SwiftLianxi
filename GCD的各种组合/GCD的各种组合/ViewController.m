@@ -17,7 +17,71 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self GCDGroupDemo1];
+    [self operationDemo1];
+}
+
+
+-(void)operationDemo1{
+    //创建一个Invocation
+    NSInvocationOperation *operation = [[NSInvocationOperation alloc]initWithTarget:self selector:@selector(run) object:nil];
+    //启动该线程
+    [operation start];
+}
+
+-(void)run{
+    NSLog(@"operation %@",[NSThread currentThread]);
+}
+
+
+
+
+-(void)GCDDemo43{
+    dispatch_group_t group = dispatch_group_create();
+    
+    dispatch_queue_t queue = dispatch_queue_create("ljdemo", DISPATCH_QUEUE_CONCURRENT);
+    
+    dispatch_group_async(group, queue, ^{
+        NSLog(@"执行任务2%@",[NSThread currentThread]);
+    });
+    
+    dispatch_group_async(group, queue, ^{
+        NSLog(@"执行任务3%@",[NSThread currentThread]);
+    });
+    
+    dispatch_group_async(group, queue, ^{
+        NSLog(@"执行任务4%@",[NSThread currentThread]);
+    });
+    
+    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+        NSLog(@"所有的任务已经完成%@",[NSThread currentThread]);
+    });
+    
+    
+    
+}
+
+
+-(void)GCDDemo2{
+    //创建队列，全局队列
+    dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
+    
+    dispatch_group_t group = dispatch_group_create();
+    
+    dispatch_group_enter(group);
+    dispatch_async(queue, ^{
+        NSLog(@"执行任务一%@",[NSThread currentThread]);
+        dispatch_group_leave(group);
+    });
+    
+    dispatch_group_enter(group);
+    dispatch_async(queue, ^{
+        NSLog(@"执行任务二 %@",[NSThread currentThread]);
+        dispatch_group_leave(group);
+    });
+    
+    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+        NSLog(@"任务已完成%@",[NSThread currentThread]);
+    });
 }
 
 
