@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="自定义控制器视图的转场动画_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Viewcontroller ＃1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGg-Gg-WIy">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="jOY-0J-hyd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="jOY-0J-hyd"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="jOY-0J-hyd"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4db-CR-Nfl">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="8Ph-54-SN4"/>
+                                    <constraint firstAttribute="width" constant="368" id="y0b-7R-ry0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8Ph-54-SN4"/>
+                                        <exclude reference="y0b-7R-ry0"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="8Ph-54-SN4"/>
+                                        <include reference="y0b-7R-ry0"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qan-f4-8Ea">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4tS-Av-Lva"/>
+                                    <constraint firstAttribute="width" constant="62" id="FZU-Pq-gIS"/>
+                                </constraints>
+                                <state key="normal" title="Tap me">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4tS-Av-Lva"/>
+                                        <exclude reference="FZU-Pq-gIS"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="4tS-Av-Lva"/>
+                                        <include reference="FZU-Pq-gIS"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Qan-f4-8Ea" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="56i-Du-LBg"/>
+                            <constraint firstItem="4db-CR-Nfl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9vN-F0-h5K"/>
+                            <constraint firstItem="iGg-Gg-WIy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ImR-aN-Dee"/>
+                            <constraint firstItem="4db-CR-Nfl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X9A-d6-m5Q"/>
+                            <constraint firstItem="Qan-f4-8Ea" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="690" id="hhd-3p-7OO">
+                                <variation key="heightClass=regular-widthClass=compact" constant="500"/>
+                            </constraint>
+                            <constraint firstAttribute="trailingMargin" secondItem="iGg-Gg-WIy" secondAttribute="trailing" id="n4g-9I-VfB"/>
+                            <constraint firstItem="iGg-Gg-WIy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="33" id="xsL-bg-j7J"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="iGg-Gg-WIy"/>
+                                <exclude reference="4db-CR-Nfl"/>
+                                <exclude reference="Qan-f4-8Ea"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="ImR-aN-Dee"/>
+                                <exclude reference="n4g-9I-VfB"/>
+                                <exclude reference="xsL-bg-j7J"/>
+                                <exclude reference="56i-Du-LBg"/>
+                                <exclude reference="hhd-3p-7OO"/>
+                                <exclude reference="9vN-F0-h5K"/>
+                                <exclude reference="X9A-d6-m5Q"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="iGg-Gg-WIy"/>
+                                <include reference="4db-CR-Nfl"/>
+                                <include reference="Qan-f4-8Ea"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="ImR-aN-Dee"/>
+                                <include reference="n4g-9I-VfB"/>
+                                <include reference="xsL-bg-j7J"/>
+                                <include reference="56i-Du-LBg"/>
+                                <include reference="hhd-3p-7OO"/>
+                                <include reference="9vN-F0-h5K"/>
+                                <include reference="X9A-d6-m5Q"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="lblMessage" destination="4db-CR-Nfl" id="Okv-Mk-7b0"/>
+                        <segue destination="po1-SN-9Ah" kind="custom" identifier="idFirstsegue" customClass="FirstCustomSegue" customModule="自定义控制器视图的转场动画_Swift" customModuleProvider="target" id="cjw-8k-8Cf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="843" y="-1753.5"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="gbu-Vd-Doc">
+            <objects>
+                <viewController id="po1-SN-9Ah" customClass="SecondViewController" customModule="自定义控制器视图的转场动画_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u1m-i6-xTz"/>
+                        <viewControllerLayoutGuide type="bottom" id="r0N-0l-qdg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZwN-mB-OHW">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="viewController #2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tk3-xg-zrZ">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="n1S-mv-1zI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="n1S-mv-1zI"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="n1S-mv-1zI"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Div-gf-6h1">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="INH-94-91P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="INH-94-91P"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="INH-94-91P"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Tk3-xg-zrZ" secondAttribute="trailing" id="7pF-qu-a0n"/>
+                            <constraint firstItem="Tk3-xg-zrZ" firstAttribute="top" secondItem="u1m-i6-xTz" secondAttribute="bottom" constant="59" id="7ud-Pv-XrU"/>
+                            <constraint firstItem="Tk3-xg-zrZ" firstAttribute="leading" secondItem="ZwN-mB-OHW" secondAttribute="leadingMargin" id="Rln-9X-FHd"/>
+                            <constraint firstItem="Div-gf-6h1" firstAttribute="centerY" secondItem="ZwN-mB-OHW" secondAttribute="centerY" id="a12-bX-RjG"/>
+                            <constraint firstItem="Div-gf-6h1" firstAttribute="leading" secondItem="ZwN-mB-OHW" secondAttribute="leadingMargin" id="afL-RX-8JQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Div-gf-6h1" secondAttribute="trailing" id="d8X-Md-9HX"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Tk3-xg-zrZ"/>
+                                <exclude reference="Div-gf-6h1"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="a12-bX-RjG"/>
+                                <exclude reference="afL-RX-8JQ"/>
+                                <exclude reference="d8X-Md-9HX"/>
+                                <exclude reference="7pF-qu-a0n"/>
+                                <exclude reference="7ud-Pv-XrU"/>
+                                <exclude reference="Rln-9X-FHd"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Tk3-xg-zrZ"/>
+                                <include reference="Div-gf-6h1"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="a12-bX-RjG"/>
+                                <include reference="afL-RX-8JQ"/>
+                                <include reference="d8X-Md-9HX"/>
+                                <include reference="7pF-qu-a0n"/>
+                                <include reference="7ud-Pv-XrU"/>
+                                <include reference="Rln-9X-FHd"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="lblMessage" destination="Div-gf-6h1" id="4OE-Be-3Oe"/>
+                        <segue destination="Vmw-OM-YGA" kind="unwind" identifier="idFirstsegueUnwind" customClass="FirstCustomSegueUnwind" customModule="自定义控制器视图的转场动画_Swift" customModuleProvider="target" unwindAction="returnFromsegueAction:" id="b0A-4b-AYe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z4B-rs-kH4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Vmw-OM-YGA" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1714.5" y="-1753.5"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="sOu-Hi-uuR">
+            <objects>
+                <viewController id="5gS-6G-xbQ" customClass="ThirdViewController" customModule="自定义控制器视图的转场动画_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rer-fT-kEx"/>
+                        <viewControllerLayoutGuide type="bottom" id="D0E-fR-JBh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2ad-FP-1tD">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="viewcontroller #3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A84-jM-1uX">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="OGK-Wj-MMo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="OGK-Wj-MMo"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="OGK-Wj-MMo"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="A84-jM-1uX" firstAttribute="centerY" secondItem="2ad-FP-1tD" secondAttribute="centerY" id="0dz-hm-ryT"/>
+                            <constraint firstItem="A84-jM-1uX" firstAttribute="leading" secondItem="2ad-FP-1tD" secondAttribute="leadingMargin" id="Dff-08-0n6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="A84-jM-1uX" secondAttribute="trailing" id="W00-83-Ti6"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="A84-jM-1uX"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="0dz-hm-ryT"/>
+                                <exclude reference="Dff-08-0n6"/>
+                                <exclude reference="W00-83-Ti6"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="A84-jM-1uX"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="0dz-hm-ryT"/>
+                                <include reference="Dff-08-0n6"/>
+                                <include reference="W00-83-Ti6"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jhd-IT-cv8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1096.5" y="-232.5"/>
+        </scene>
+    </scenes>
+</document>
