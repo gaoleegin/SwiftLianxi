@@ -11,7 +11,7 @@
 @implementation NormalDismissAnimation
 - (NSTimeInterval)transitionDuration:(id <UIViewControllerContextTransitioning>)transitionContext
 {
-    return 0.4f;
+    return 3.0f;
 }
 
 - (void)animateTransition:(id <UIViewControllerContextTransitioning>)transitionContext
@@ -23,7 +23,17 @@
     // 2. Set init frame for fromVC
     CGRect screenBounds = [[UIScreen mainScreen] bounds];
     CGRect initFrame = [transitionContext initialFrameForViewController:fromVC];
+    
+    
     CGRect finalFrame = CGRectOffset(initFrame, 0, screenBounds.size.height);
+    
+     CGAffineTransform endAngle = CGAffineTransformMakeRotation(M_PI);
+    
+    
+    CGAffineTransform endAngle1 = CGAffineTransformRotate(fromVC.view.transform, (M_PI));
+    
+    
+    //从哪里来，到哪里去
     
     // 3. Add target view to the container, and move it to back.
     UIView *containerView = [transitionContext containerView];
@@ -34,9 +44,10 @@
     NSTimeInterval duration = [self transitionDuration:transitionContext];
     [UIView animateWithDuration:duration animations:^{
         fromVC.view.frame = finalFrame;
+        fromVC.view.transform = endAngle1;
     } completion:^(BOOL finished) {
-        [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
-    }];
+        [transitionContext completeTransition:YES];
+        }];
 }
 
 @end

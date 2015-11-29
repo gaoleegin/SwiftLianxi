@@ -30,6 +30,10 @@
     self.view.backgroundColor = [UIColor redColor];
 }
 
+-(void)dealloc{
+    NSLog(@"zoule");
+}
+
 -(void)dissmissVC{
     
     if ([self.delegate respondsToSelector:@selector(dismissTwoVC:)]) {
