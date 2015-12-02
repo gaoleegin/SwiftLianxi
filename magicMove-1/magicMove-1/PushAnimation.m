@@ -69,10 +69,7 @@
         
         [[transitionContext containerView] setNeedsLayout];
         toVC.view.frame = toVCFrame;
-        
-        snapView.frame = CGRectMake(100, 100, 182.5, 182.5);
-        snapView.alpha = 1.0;
-        toVC.view.alpha = 1.0;
+
         
     } completion:^(BOOL finished) {
         [transitionContext completeTransition:YES];
