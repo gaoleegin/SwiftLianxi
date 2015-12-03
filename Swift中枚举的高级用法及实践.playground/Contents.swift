@@ -87,7 +87,7 @@ print(bestHouse.rawValue)
 
 //
 let rightMovement = Movement1(rawValue: 1)
-
+let rightMovement22 = Movement1(rawValue: 1)
 
 
 

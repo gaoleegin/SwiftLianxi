@@ -21,6 +21,8 @@
 -(void)loadView{
     
     
+    
+    
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc]init];
     
     flowLayout.minimumInteritemSpacing = 10;
