@@ -58,6 +58,7 @@
         cell.backgroundColor = [UIColor redColor];
     } else{
         cell.backgroundColor = [UIColor blueColor];
+        
     }
     
     return cell;
