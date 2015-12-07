@@ -57,7 +57,8 @@
 
 //找到文档的元素
 -(void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string{
-    NSLog(@"找到文档元素%@",string);
+    
+    NSLog(@"找到新的缘续了");
     
 }
 
