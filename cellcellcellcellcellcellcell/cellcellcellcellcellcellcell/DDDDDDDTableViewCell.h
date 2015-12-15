@@ -8,10 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
+@class DDDDDDDTableViewCell;
+@protocol DDDDDDDTableViewCellDelegate <NSObject>
+
+-(void)btnClicked:(DDDDDDDTableViewCell *)cell andIndexPath:(NSIndexPath *)indexPath;
+
+@end
+
+
+
+
 @interface DDDDDDDTableViewCell : UITableViewCell
+
+@property(nonatomic,weak) id<DDDDDDDTableViewCellDelegate>delegate;
 
 @property(nonatomic,assign) BOOL isShouldSelect;
 
-@property(nonatomic,weak) UIButton *cellBtn;
+@property(nonatomic,strong) NSIndexPath *indexdPath;
 
 @end

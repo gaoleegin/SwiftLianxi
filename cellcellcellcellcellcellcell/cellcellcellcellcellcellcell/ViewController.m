@@ -9,11 +9,26 @@
 #import "ViewController.h"
 #import "DDDDDDDTableViewCell.h"
 
-@interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
+@interface ViewController ()<UITableViewDataSource,UITableViewDelegate,DDDDDDDTableViewCellDelegate>
+
+
+@property(nonatomic,strong) NSMutableDictionary *mutaDice;
+
+
+@property(nonatomic,weak)UITableView *maintable;
 
 @end
 
+
+
 @implementation ViewController
+
+-(NSMutableDictionary *)mutaDice{
+    if (_mutaDice==nil) {
+        _mutaDice = [NSMutableDictionary dictionary];
+    }
+    return _mutaDice;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,28 +39,8 @@
     maintable.delegate = self;
     maintable.dataSource = self;
     [self.view addSubview:maintable];
+    self.maintable = maintable;
     
-}
-
-
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *cellID = @"cellid";
-    DDDDDDDTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
-    
-    if (cell==nil) {
-        cell = [[DDDDDDDTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
-    }
-    
-    if (cell.isShouldSelect) {
-
-        [cell.cellBtn setTitle:@"dddd" forState:UIControlStateSelected];
-        
-    } else {
-
-        [cell.cellBtn setTitle:@"hahahah" forState:UIControlStateNormal];
-    }
-    
-    return cell;
 }
 
 
@@ -58,14 +53,36 @@
 }
 
 
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    DDDDDDDTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellID"];
+    
+    if (cell==nil) {
+        cell = [[DDDDDDDTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cellID"];
+    }
+    cell.delegate = self;
+    
+    id booool = [self.mutaDice objectForKey:indexPath];
+    
+    if (booool==nil) {
+        cell.isShouldSelect = NO;
+    } else{
+        cell.isShouldSelect = [booool boolValue];
+    }
+    
+    cell.indexdPath  =  indexPath;
+    
+    return cell;
+}
 
 
+-(void)btnClicked:(DDDDDDDTableViewCell *)cell andIndexPath:(NSIndexPath *)indexPath{
+    
+    
+    [self.mutaDice setObject:@(cell.isShouldSelect) forKey:indexPath];
 
-
-
-
-
-
+    [self.maintable reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
+    
+}
 
 
 @end

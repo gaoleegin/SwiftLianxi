@@ -8,6 +8,13 @@
 
 #import "DDDDDDDTableViewCell.h"
 
+
+@interface DDDDDDDTableViewCell()
+
+@property(nonatomic,weak) UIButton *cellBtn;
+
+@end
+
 @implementation DDDDDDDTableViewCell
 
 
@@ -19,16 +26,12 @@
         UIButton *btn = [[UIButton alloc]init];
         btn.frame = CGRectMake(0, 0, 100, 100);
         [btn setTitle:@"hahahah" forState:UIControlStateNormal];
-
-        
-//        [btn addTarget:self action:@selector(btnCLicked:) forControlEvents:UIControlEventTouchUpInside];
-        
-        
+        [btn setTitle:@"dddd" forState:UIControlStateSelected];
         btn.backgroundColor = [UIColor redColor];
         btn.titleLabel.font = [UIFont systemFontOfSize:12];
         [btn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
         [btn setTitleColor:[UIColor blackColor] forState:UIControlStateSelected];
-        
+        [btn addTarget:self action:@selector(btnCLicked:) forControlEvents:UIControlEventTouchUpInside];
         [self.contentView addSubview:btn];
         
         self.cellBtn = btn;
@@ -37,8 +40,19 @@
     return self;
 }
 
+-(void)setIsShouldSelect:(BOOL)isShouldSelect{
+    _isShouldSelect = isShouldSelect;
+    self.cellBtn.selected = _isShouldSelect;
+}
+
+
 -(void)btnCLicked:(UIButton *)btn {
-    btn.selected = !btn.selected;
+    
+    self.cellBtn.selected = !self.cellBtn.selected;
+    self.isShouldSelect = self.cellBtn.selected;
+    if ([self.delegate respondsToSelector:@selector(btnClicked:andIndexPath:)]) {
+        [self.delegate btnClicked:self andIndexPath:self.indexdPath];
+    }
 }
 
 @end
