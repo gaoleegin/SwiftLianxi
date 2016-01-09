@@ -24,7 +24,7 @@
 @property (nonatomic ,strong) NSArray *headArray;
 
 
-@end
+@endq
 
 @implementation ViewController
 
@@ -35,7 +35,7 @@
     
     self.headArray = @[@"头条",@"娱乐",@"体育",@"财经",@"科技",@"NBA",@"手机"];
     
-    self.automaticallyAdjustsScrollViewInsets = NO;
+    self.automaticallyAdjustsScrollViewInsets = YES;
     self.headScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 64, 320, 40)];
     self.headScrollView.backgroundColor = [UIColor purpleColor];
     self.headScrollView.contentSize = CGSizeMake(560, 0);
