@@ -11,29 +11,36 @@
 
 @interface ViewController ()
 
+@property(nonatomic,weak)UIView *bgview;
+
 @end
+
+#define randomColor [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1.0];
 
 @implementation ViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-//    SoundsTools *tools = [SoundsTools sharedSoundTools];
     
-//    NSLog(@"%p",&tools);
+    UIView *bgview = [[UIView alloc]init];
+    bgview.backgroundColor = randomColor;
     
-    SoundsTools *tools = [SoundsTools sharedSoundTools];
-    NSLog(@"%p",&tools);
+    bgview.frame = CGRectMake(0, 0, 100, 100);
+    [self.view addSubview:bgview];
+
+    self.bgview = bgview;
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    SoundsTools *tools = [SoundsTools sharedSoundTools];
-    NSLog(@"%p",&tools);
+    
+    self.bgview.transform  = CGAffineTransformRotate(self.bgview.transform, M_PI_4);
+    
+    CATransition *anim = [CATransition animation];
+    anim.type = @"moveIn";
+    anim.duration = 2.0;
+    [self.bgview.layer addAnimation:anim forKey:nil];
+
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 @end

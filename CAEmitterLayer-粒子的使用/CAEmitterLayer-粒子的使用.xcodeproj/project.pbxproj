@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44042C3F1C4DD6110096A6B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44042C3E1C4DD6110096A6B2 /* main.m */; };
+		44042C421C4DD6110096A6B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44042C411C4DD6110096A6B2 /* AppDelegate.m */; };
+		44042C451C4DD6110096A6B2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44042C441C4DD6110096A6B2 /* ViewController.m */; };
+		44042C4A1C4DD6110096A6B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44042C491C4DD6110096A6B2 /* Assets.xcassets */; };
+		44042C4D1C4DD6110096A6B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44042C4B1C4DD6110096A6B2 /* LaunchScreen.storyboard */; };
+		44042C581C4DD6110096A6B2 /* CAEmitterLayer______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44042C571C4DD6110096A6B2 /* CAEmitterLayer______Tests.m */; };
+		44042C631C4DD6110096A6B2 /* CAEmitterLayer______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44042C621C4DD6110096A6B2 /* CAEmitterLayer______UITests.m */; };
+		44042C721C4DDDCA0096A6B2 /* smoke.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44042C701C4DDDCA0096A6B2 /* smoke.jpg */; };
+		44042C731C4DDDCA0096A6B2 /* fire.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44042C711C4DDDCA0096A6B2 /* fire.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44042C541C4DD6110096A6B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44042C321C4DD6110096A6B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44042C391C4DD6110096A6B2;
+			remoteInfo = "CAEmitterLayer-粒子的使用";
+		};
+		44042C5F1C4DD6110096A6B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44042C321C4DD6110096A6B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44042C391C4DD6110096A6B2;
+			remoteInfo = "CAEmitterLayer-粒子的使用";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		44042C3A1C4DD6110096A6B2 /* CAEmitterLayer-粒子的使用.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CAEmitterLayer-粒子的使用.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44042C3E1C4DD6110096A6B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		44042C401C4DD6110096A6B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		44042C411C4DD6110096A6B2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		44042C431C4DD6110096A6B2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		44042C441C4DD6110096A6B2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		44042C491C4DD6110096A6B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44042C4C1C4DD6110096A6B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		44042C4E1C4DD6110096A6B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44042C531C4DD6110096A6B2 /* CAEmitterLayer-粒子的使用Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CAEmitterLayer-粒子的使用Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44042C571C4DD6110096A6B2 /* CAEmitterLayer______Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CAEmitterLayer______Tests.m"; sourceTree = "<group>"; };
+		44042C591C4DD6110096A6B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44042C5E1C4DD6110096A6B2 /* CAEmitterLayer-粒子的使用UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CAEmitterLayer-粒子的使用UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44042C621C4DD6110096A6B2 /* CAEmitterLayer______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CAEmitterLayer______UITests.m"; sourceTree = "<group>"; };
+		44042C641C4DD6110096A6B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44042C701C4DDDCA0096A6B2 /* smoke.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = smoke.jpg; sourceTree = "<group>"; };
+		44042C711C4DDDCA0096A6B2 /* fire.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fire.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44042C371C4DD6110096A6B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44042C501C4DD6110096A6B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44042C5B1C4DD6110096A6B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44042C311C4DD6110096A6B2 = {
+			isa = PBXGroup;
+			children = (
+				44042C3C1C4DD6110096A6B2 /* CAEmitterLayer-粒子的使用 */,
+				44042C561C4DD6110096A6B2 /* CAEmitterLayer-粒子的使用Tests */,
+				44042C611C4DD6110096A6B2 /* CAEmitterLayer-粒子的使用UITests */,
+				44042C3B1C4DD6110096A6B2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		44042C3B1C4DD6110096A6B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44042C3A1C4DD6110096A6B2 /* CAEmitterLayer-粒子的使用.app */,
+				44042C531C4DD6110096A6B2 /* CAEmitterLayer-粒子的使用Tests.xctest */,
+				44042C5E1C4DD6110096A6B2 /* CAEmitterLayer-粒子的使用UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44042C3C1C4DD6110096A6B2 /* CAEmitterLayer-粒子的使用 */ = {
+			isa = PBXGroup;
+			children = (
+				44042C701C4DDDCA0096A6B2 /* smoke.jpg */,
+				44042C711C4DDDCA0096A6B2 /* fire.jpg */,
+				44042C401C4DD6110096A6B2 /* AppDelegate.h */,
+				44042C411C4DD6110096A6B2 /* AppDelegate.m */,
+				44042C431C4DD6110096A6B2 /* ViewController.h */,
+				44042C441C4DD6110096A6B2 /* ViewController.m */,
+				44042C491C4DD6110096A6B2 /* Assets.xcassets */,
+				44042C4B1C4DD6110096A6B2 /* LaunchScreen.storyboard */,
+				44042C4E1C4DD6110096A6B2 /* Info.plist */,
+				44042C3D1C4DD6110096A6B2 /* Supporting Files */,
+			);
+			path = "CAEmitterLayer-粒子的使用";
+			sourceTree = "<group>";
+		};
+		44042C3D1C4DD6110096A6B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				44042C3E1C4DD6110096A6B2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		44042C561C4DD6110096A6B2 /* CAEmitterLayer-粒子的使用Tests */ = {
+			isa = PBXGroup;
+			children = (
+				44042C571C4DD6110096A6B2 /* CAEmitterLayer______Tests.m */,
+				44042C591C4DD6110096A6B2 /* Info.plist */,
+			);
+			path = "CAEmitterLayer-粒子的使用Tests";
+			sourceTree = "<group>";
+		};
+		44042C611C4DD6110096A6B2 /* CAEmitterLayer-粒子的使用UITests */ = {
+			isa = PBXGroup;
+			children = (
+				44042C621C4DD6110096A6B2 /* CAEmitterLayer______UITests.m */,
+				44042C641C4DD6110096A6B2 /* Info.plist */,
+			);
+			path = "CAEmitterLayer-粒子的使用UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44042C391C4DD6110096A6B2 /* CAEmitterLayer-粒子的使用 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44042C671C4DD6110096A6B2 /* Build configuration list for PBXNativeTarget "CAEmitterLayer-粒子的使用" */;
+			buildPhases = (
+				44042C361C4DD6110096A6B2 /* Sources */,
+				44042C371C4DD6110096A6B2 /* Frameworks */,
+				44042C381C4DD6110096A6B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CAEmitterLayer-粒子的使用";
+			productName = "CAEmitterLayer-粒子的使用";
+			productReference = 44042C3A1C4DD6110096A6B2 /* CAEmitterLayer-粒子的使用.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44042C521C4DD6110096A6B2 /* CAEmitterLayer-粒子的使用Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44042C6A1C4DD6110096A6B2 /* Build configuration list for PBXNativeTarget "CAEmitterLayer-粒子的使用Tests" */;
+			buildPhases = (
+				44042C4F1C4DD6110096A6B2 /* Sources */,
+				44042C501C4DD6110096A6B2 /* Frameworks */,
+				44042C511C4DD6110096A6B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44042C551C4DD6110096A6B2 /* PBXTargetDependency */,
+			);
+			name = "CAEmitterLayer-粒子的使用Tests";
+			productName = "CAEmitterLayer-粒子的使用Tests";
+			productReference = 44042C531C4DD6110096A6B2 /* CAEmitterLayer-粒子的使用Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		44042C5D1C4DD6110096A6B2 /* CAEmitterLayer-粒子的使用UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44042C6D1C4DD6110096A6B2 /* Build configuration list for PBXNativeTarget "CAEmitterLayer-粒子的使用UITests" */;
+			buildPhases = (
+				44042C5A1C4DD6110096A6B2 /* Sources */,
+				44042C5B1C4DD6110096A6B2 /* Frameworks */,
+				44042C5C1C4DD6110096A6B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44042C601C4DD6110096A6B2 /* PBXTargetDependency */,
+			);
+			name = "CAEmitterLayer-粒子的使用UITests";
+			productName = "CAEmitterLayer-粒子的使用UITests";
+			productReference = 44042C5E1C4DD6110096A6B2 /* CAEmitterLayer-粒子的使用UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44042C321C4DD6110096A6B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "高李军";
+				TargetAttributes = {
+					44042C391C4DD6110096A6B2 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					44042C521C4DD6110096A6B2 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 44042C391C4DD6110096A6B2;
+					};
+					44042C5D1C4DD6110096A6B2 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 44042C391C4DD6110096A6B2;
+					};
+				};
+			};
+			buildConfigurationList = 44042C351C4DD6110096A6B2 /* Build configuration list for PBXProject "CAEmitterLayer-粒子的使用" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44042C311C4DD6110096A6B2;
+			productRefGroup = 44042C3B1C4DD6110096A6B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44042C391C4DD6110096A6B2 /* CAEmitterLayer-粒子的使用 */,
+				44042C521C4DD6110096A6B2 /* CAEmitterLayer-粒子的使用Tests */,
+				44042C5D1C4DD6110096A6B2 /* CAEmitterLayer-粒子的使用UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44042C381C4DD6110096A6B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44042C4D1C4DD6110096A6B2 /* LaunchScreen.storyboard in Resources */,
+				44042C731C4DDDCA0096A6B2 /* fire.jpg in Resources */,
+				44042C4A1C4DD6110096A6B2 /* Assets.xcassets in Resources */,
+				44042C721C4DDDCA0096A6B2 /* smoke.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44042C511C4DD6110096A6B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44042C5C1C4DD6110096A6B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44042C361C4DD6110096A6B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44042C451C4DD6110096A6B2 /* ViewController.m in Sources */,
+				44042C421C4DD6110096A6B2 /* AppDelegate.m in Sources */,
+				44042C3F1C4DD6110096A6B2 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44042C4F1C4DD6110096A6B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44042C581C4DD6110096A6B2 /* CAEmitterLayer______Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44042C5A1C4DD6110096A6B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44042C631C4DD6110096A6B2 /* CAEmitterLayer______UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44042C551C4DD6110096A6B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44042C391C4DD6110096A6B2 /* CAEmitterLayer-粒子的使用 */;
+			targetProxy = 44042C541C4DD6110096A6B2 /* PBXContainerItemProxy */;
+		};
+		44042C601C4DD6110096A6B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44042C391C4DD6110096A6B2 /* CAEmitterLayer-粒子的使用 */;
+			targetProxy = 44042C5F1C4DD6110096A6B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		44042C4B1C4DD6110096A6B2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44042C4C1C4DD6110096A6B2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44042C651C4DD6110096A6B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		44042C661C4DD6110096A6B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44042C681C4DD6110096A6B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "CAEmitterLayer-粒子的使用/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.damai.cn.CAEmitterLayer------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		44042C691C4DD6110096A6B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "CAEmitterLayer-粒子的使用/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.damai.cn.CAEmitterLayer------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		44042C6B1C4DD6110096A6B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "CAEmitterLayer-粒子的使用Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.damai.cn.CAEmitterLayer------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CAEmitterLayer-粒子的使用.app/CAEmitterLayer-粒子的使用";
+			};
+			name = Debug;
+		};
+		44042C6C1C4DD6110096A6B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "CAEmitterLayer-粒子的使用Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.damai.cn.CAEmitterLayer------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CAEmitterLayer-粒子的使用.app/CAEmitterLayer-粒子的使用";
+			};
+			name = Release;
+		};
+		44042C6E1C4DD6110096A6B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "CAEmitterLayer-粒子的使用UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.damai.cn.CAEmitterLayer------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "CAEmitterLayer-粒子的使用";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		44042C6F1C4DD6110096A6B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "CAEmitterLayer-粒子的使用UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.damai.cn.CAEmitterLayer------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "CAEmitterLayer-粒子的使用";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44042C351C4DD6110096A6B2 /* Build configuration list for PBXProject "CAEmitterLayer-粒子的使用" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44042C651C4DD6110096A6B2 /* Debug */,
+				44042C661C4DD6110096A6B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44042C671C4DD6110096A6B2 /* Build configuration list for PBXNativeTarget "CAEmitterLayer-粒子的使用" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44042C681C4DD6110096A6B2 /* Debug */,
+				44042C691C4DD6110096A6B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44042C6A1C4DD6110096A6B2 /* Build configuration list for PBXNativeTarget "CAEmitterLayer-粒子的使用Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44042C6B1C4DD6110096A6B2 /* Debug */,
+				44042C6C1C4DD6110096A6B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44042C6D1C4DD6110096A6B2 /* Build configuration list for PBXNativeTarget "CAEmitterLayer-粒子的使用UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44042C6E1C4DD6110096A6B2 /* Debug */,
+				44042C6F1C4DD6110096A6B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44042C321C4DD6110096A6B2 /* Project object */;
+}

@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4493509C1C4CC1E500D1AF4D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4493509B1C4CC1E500D1AF4D /* main.m */; };
+		4493509F1C4CC1E500D1AF4D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4493509E1C4CC1E500D1AF4D /* AppDelegate.m */; };
+		449350A71C4CC1E500D1AF4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 449350A61C4CC1E500D1AF4D /* Assets.xcassets */; };
+		449350AA1C4CC1E500D1AF4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 449350A81C4CC1E500D1AF4D /* LaunchScreen.storyboard */; };
+		449350B51C4CC1E500D1AF4D /* LJFlyBirdTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 449350B41C4CC1E500D1AF4D /* LJFlyBirdTests.m */; };
+		449350C01C4CC1E500D1AF4D /* LJFlyBirdUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 449350BF1C4CC1E500D1AF4D /* LJFlyBirdUITests.m */; };
+		449350CF1C4CC22800D1AF4D /* LJFlyBirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 449350CE1C4CC22800D1AF4D /* LJFlyBirdViewController.m */; };
+		449350D41C4CC9CC00D1AF4D /* UIView+LJChangeFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 449350D31C4CC9CC00D1AF4D /* UIView+LJChangeFrame.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		449350B11C4CC1E500D1AF4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4493508F1C4CC1E500D1AF4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 449350961C4CC1E500D1AF4D;
+			remoteInfo = LJFlyBird;
+		};
+		449350BC1C4CC1E500D1AF4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4493508F1C4CC1E500D1AF4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 449350961C4CC1E500D1AF4D;
+			remoteInfo = LJFlyBird;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		449350971C4CC1E500D1AF4D /* LJFlyBird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LJFlyBird.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4493509B1C4CC1E500D1AF4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4493509D1C4CC1E500D1AF4D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4493509E1C4CC1E500D1AF4D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		449350A61C4CC1E500D1AF4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		449350A91C4CC1E500D1AF4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		449350AB1C4CC1E500D1AF4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		449350B01C4CC1E500D1AF4D /* LJFlyBirdTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LJFlyBirdTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		449350B41C4CC1E500D1AF4D /* LJFlyBirdTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJFlyBirdTests.m; sourceTree = "<group>"; };
+		449350B61C4CC1E500D1AF4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		449350BB1C4CC1E500D1AF4D /* LJFlyBirdUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LJFlyBirdUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		449350BF1C4CC1E500D1AF4D /* LJFlyBirdUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJFlyBirdUITests.m; sourceTree = "<group>"; };
+		449350C11C4CC1E500D1AF4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		449350CD1C4CC22800D1AF4D /* LJFlyBirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJFlyBirdViewController.h; sourceTree = "<group>"; };
+		449350CE1C4CC22800D1AF4D /* LJFlyBirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJFlyBirdViewController.m; sourceTree = "<group>"; };
+		449350D21C4CC9CC00D1AF4D /* UIView+LJChangeFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LJChangeFrame.h"; sourceTree = "<group>"; };
+		449350D31C4CC9CC00D1AF4D /* UIView+LJChangeFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LJChangeFrame.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		449350941C4CC1E500D1AF4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		449350AD1C4CC1E500D1AF4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		449350B81C4CC1E500D1AF4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4493508E1C4CC1E500D1AF4D = {
+			isa = PBXGroup;
+			children = (
+				449350991C4CC1E500D1AF4D /* LJFlyBird */,
+				449350B31C4CC1E500D1AF4D /* LJFlyBirdTests */,
+				449350BE1C4CC1E500D1AF4D /* LJFlyBirdUITests */,
+				449350981C4CC1E500D1AF4D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		449350981C4CC1E500D1AF4D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				449350971C4CC1E500D1AF4D /* LJFlyBird.app */,
+				449350B01C4CC1E500D1AF4D /* LJFlyBirdTests.xctest */,
+				449350BB1C4CC1E500D1AF4D /* LJFlyBirdUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		449350991C4CC1E500D1AF4D /* LJFlyBird */ = {
+			isa = PBXGroup;
+			children = (
+				449350D21C4CC9CC00D1AF4D /* UIView+LJChangeFrame.h */,
+				449350D31C4CC9CC00D1AF4D /* UIView+LJChangeFrame.m */,
+				449350CD1C4CC22800D1AF4D /* LJFlyBirdViewController.h */,
+				449350CE1C4CC22800D1AF4D /* LJFlyBirdViewController.m */,
+				4493509D1C4CC1E500D1AF4D /* AppDelegate.h */,
+				4493509E1C4CC1E500D1AF4D /* AppDelegate.m */,
+				449350A61C4CC1E500D1AF4D /* Assets.xcassets */,
+				449350A81C4CC1E500D1AF4D /* LaunchScreen.storyboard */,
+				449350AB1C4CC1E500D1AF4D /* Info.plist */,
+				4493509A1C4CC1E500D1AF4D /* Supporting Files */,
+			);
+			path = LJFlyBird;
+			sourceTree = "<group>";
+		};
+		4493509A1C4CC1E500D1AF4D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4493509B1C4CC1E500D1AF4D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		449350B31C4CC1E500D1AF4D /* LJFlyBirdTests */ = {
+			isa = PBXGroup;
+			children = (
+				449350B41C4CC1E500D1AF4D /* LJFlyBirdTests.m */,
+				449350B61C4CC1E500D1AF4D /* Info.plist */,
+			);
+			path = LJFlyBirdTests;
+			sourceTree = "<group>";
+		};
+		449350BE1C4CC1E500D1AF4D /* LJFlyBirdUITests */ = {
+			isa = PBXGroup;
+			children = (
+				449350BF1C4CC1E500D1AF4D /* LJFlyBirdUITests.m */,
+				449350C11C4CC1E500D1AF4D /* Info.plist */,
+			);
+			path = LJFlyBirdUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		449350961C4CC1E500D1AF4D /* LJFlyBird */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 449350C41C4CC1E500D1AF4D /* Build configuration list for PBXNativeTarget "LJFlyBird" */;
+			buildPhases = (
+				449350931C4CC1E500D1AF4D /* Sources */,
+				449350941C4CC1E500D1AF4D /* Frameworks */,
+				449350951C4CC1E500D1AF4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LJFlyBird;
+			productName = LJFlyBird;
+			productReference = 449350971C4CC1E500D1AF4D /* LJFlyBird.app */;
+			productType = "com.apple.product-type.application";
+		};
+		449350AF1C4CC1E500D1AF4D /* LJFlyBirdTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 449350C71C4CC1E500D1AF4D /* Build configuration list for PBXNativeTarget "LJFlyBirdTests" */;
+			buildPhases = (
+				449350AC1C4CC1E500D1AF4D /* Sources */,
+				449350AD1C4CC1E500D1AF4D /* Frameworks */,
+				449350AE1C4CC1E500D1AF4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				449350B21C4CC1E500D1AF4D /* PBXTargetDependency */,
+			);
+			name = LJFlyBirdTests;
+			productName = LJFlyBirdTests;
+			productReference = 449350B01C4CC1E500D1AF4D /* LJFlyBirdTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		449350BA1C4CC1E500D1AF4D /* LJFlyBirdUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 449350CA1C4CC1E500D1AF4D /* Build configuration list for PBXNativeTarget "LJFlyBirdUITests" */;
+			buildPhases = (
+				449350B71C4CC1E500D1AF4D /* Sources */,
+				449350B81C4CC1E500D1AF4D /* Frameworks */,
+				449350B91C4CC1E500D1AF4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				449350BD1C4CC1E500D1AF4D /* PBXTargetDependency */,
+			);
+			name = LJFlyBirdUITests;
+			productName = LJFlyBirdUITests;
+			productReference = 449350BB1C4CC1E500D1AF4D /* LJFlyBirdUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4493508F1C4CC1E500D1AF4D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "高李军";
+				TargetAttributes = {
+					449350961C4CC1E500D1AF4D = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					449350AF1C4CC1E500D1AF4D = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 449350961C4CC1E500D1AF4D;
+					};
+					449350BA1C4CC1E500D1AF4D = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 449350961C4CC1E500D1AF4D;
+					};
+				};
+			};
+			buildConfigurationList = 449350921C4CC1E500D1AF4D /* Build configuration list for PBXProject "LJFlyBird" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4493508E1C4CC1E500D1AF4D;
+			productRefGroup = 449350981C4CC1E500D1AF4D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				449350961C4CC1E500D1AF4D /* LJFlyBird */,
+				449350AF1C4CC1E500D1AF4D /* LJFlyBirdTests */,
+				449350BA1C4CC1E500D1AF4D /* LJFlyBirdUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		449350951C4CC1E500D1AF4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				449350AA1C4CC1E500D1AF4D /* LaunchScreen.storyboard in Resources */,
+				449350A71C4CC1E500D1AF4D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		449350AE1C4CC1E500D1AF4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		449350B91C4CC1E500D1AF4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		449350931C4CC1E500D1AF4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				449350D41C4CC9CC00D1AF4D /* UIView+LJChangeFrame.m in Sources */,
+				4493509F1C4CC1E500D1AF4D /* AppDelegate.m in Sources */,
+				4493509C1C4CC1E500D1AF4D /* main.m in Sources */,
+				449350CF1C4CC22800D1AF4D /* LJFlyBirdViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		449350AC1C4CC1E500D1AF4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				449350B51C4CC1E500D1AF4D /* LJFlyBirdTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		449350B71C4CC1E500D1AF4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				449350C01C4CC1E500D1AF4D /* LJFlyBirdUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		449350B21C4CC1E500D1AF4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 449350961C4CC1E500D1AF4D /* LJFlyBird */;
+			targetProxy = 449350B11C4CC1E500D1AF4D /* PBXContainerItemProxy */;
+		};
+		449350BD1C4CC1E500D1AF4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 449350961C4CC1E500D1AF4D /* LJFlyBird */;
+			targetProxy = 449350BC1C4CC1E500D1AF4D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		449350A81C4CC1E500D1AF4D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				449350A91C4CC1E500D1AF4D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		449350C21C4CC1E500D1AF4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		449350C31C4CC1E500D1AF4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		449350C51C4CC1E500D1AF4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LJFlyBird/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.damai.cn.LJFlyBird;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		449350C61C4CC1E500D1AF4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LJFlyBird/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.damai.cn.LJFlyBird;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		449350C81C4CC1E500D1AF4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LJFlyBirdTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.damai.cn.LJFlyBirdTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LJFlyBird.app/LJFlyBird";
+			};
+			name = Debug;
+		};
+		449350C91C4CC1E500D1AF4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LJFlyBirdTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.damai.cn.LJFlyBirdTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LJFlyBird.app/LJFlyBird";
+			};
+			name = Release;
+		};
+		449350CB1C4CC1E500D1AF4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LJFlyBirdUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.damai.cn.LJFlyBirdUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LJFlyBird;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		449350CC1C4CC1E500D1AF4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LJFlyBirdUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.damai.cn.LJFlyBirdUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LJFlyBird;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		449350921C4CC1E500D1AF4D /* Build configuration list for PBXProject "LJFlyBird" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				449350C21C4CC1E500D1AF4D /* Debug */,
+				449350C31C4CC1E500D1AF4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		449350C41C4CC1E500D1AF4D /* Build configuration list for PBXNativeTarget "LJFlyBird" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				449350C51C4CC1E500D1AF4D /* Debug */,
+				449350C61C4CC1E500D1AF4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		449350C71C4CC1E500D1AF4D /* Build configuration list for PBXNativeTarget "LJFlyBirdTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				449350C81C4CC1E500D1AF4D /* Debug */,
+				449350C91C4CC1E500D1AF4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		449350CA1C4CC1E500D1AF4D /* Build configuration list for PBXNativeTarget "LJFlyBirdUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				449350CB1C4CC1E500D1AF4D /* Debug */,
+				449350CC1C4CC1E500D1AF4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4493508F1C4CC1E500D1AF4D /* Project object */;
+}
